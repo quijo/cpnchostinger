@@ -12,7 +12,8 @@
 
 <body>
     <div class="comming">
-        <h1>test1asd sdfaf</h1>
+        <h1>Coming Soon!</h1>
+        <a href="http://vnbc.edu.ph">Please use this site</a>
     </div>
 
 
