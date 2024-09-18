@@ -17,9 +17,7 @@
         <a href="http://vnbc.edu.ph">Please use this site</a>
     </div>
 
-    <div class=" test text-3xl font-bold underline">
-        hello
-    </div>
+
 
 
 
