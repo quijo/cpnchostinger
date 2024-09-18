@@ -13,8 +13,8 @@
 
 <body>
     <div class="coming">
-        <h1>Coming Soooooon!</h1>
-        <a href="http://vnbc.edu.ph">Please use this site</a>
+        <h1>Coming Soon!</h1>
+        <a href="https://vnbc.edu.ph">vnbc.edu.ph</a>
     </div>
 
 
