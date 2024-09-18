@@ -4,26 +4,8 @@
 @tailwind utilities;
 
 
-.coming{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 
-    color:white;
-    height: 100vh;
-    width: 100%;
-    background-image: url("../images/bg1.png");
-
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.coming a{
-    color:white;
-}
 .test{
-    color:green;
+    color:blue;
 }
 
