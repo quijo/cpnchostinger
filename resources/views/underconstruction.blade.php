@@ -12,10 +12,10 @@
 </head>
 
 <body>
-    {{-- <div class="coming">
+    <div class="coming">
         <h1>Coming Soooooon!</h1>
         <a href="http://vnbc.edu.ph">Please use this site</a>
-    </div> --}}
+    </div>
 
     <div class=" test text-3xl font-bold underline">
         hello
