@@ -5,8 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CPNC</title>
-    {{-- <link rel="stylesheet" href="{{ @vite('resources/css/app.css') }}"> --}}
-    @vite('resources/css/app.css')
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+
+
+
 </head>
 
 <body>
@@ -15,7 +17,7 @@
         <a href="http://vnbc.edu.ph">Please use this site</a>
     </div> --}}
 
-    <div class="text-3xl font-bold underline">
+    <div class=" test text-3xl font-bold underline">
         hello
     </div>
 
