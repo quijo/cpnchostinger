@@ -232,7 +232,9 @@ background-color: white;
 }
 
 .announcement{
-    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
     margin: 0 auto;
     /* border: red 1px solid; */
 
@@ -299,6 +301,7 @@ margin: 0 auto;
 
      header{
        padding:1rem 1rem;
+       height: auto;
       }
       header nav{
         display: block;
@@ -310,7 +313,7 @@ margin: 0 auto;
         left:0;
         width: 100%;
         transition: ease-in .2s;
-        height: 100vh;
+        /* height: 100vh; */
       }
       header nav .slide-left{
         display: block;

@@ -8,6 +8,8 @@
 
     <div class="announcement">
 
+        <x-card text="hello"></x-card>
+        <x-card></x-card>
         <x-card></x-card>
 
     </div>
@@ -23,7 +25,7 @@
     --}}
     <div class="feature">
         <div class="title"> News and Updates</div>
-        <x-card></x-card>
+        {{-- <x-card></x-card> --}}
     </div>
 
 

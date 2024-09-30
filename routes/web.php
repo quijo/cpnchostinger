@@ -36,9 +36,11 @@ Route::get('/parentguardians', function () {
 Route::get('/studentlife', function () {
     return view('pages.studentlife');
 });
-Route::get('/visionmission', function () {
-    return view('pages.visionmission');
+Route::get('/central', function () {
+    return view('welcome');
 });
+
+
 
 
 

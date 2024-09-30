@@ -10,6 +10,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <title>CPNC</title>
+    <link rel="stylesheet" href={{ asset('css/tailwind.css') }}>
+    <link rel="stylesheet" href={{ asset('css/tailwind.css') }}>
 
 </head>
 
@@ -19,7 +21,7 @@
 
     <script src="{{ asset('js/app.js') }}"></script>
     <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
+    {{-- <script type="text/javascript">
         var Tawk_API = Tawk_API || {},
             Tawk_LoadStart = new Date();
         (function() {
@@ -31,7 +33,7 @@
             s1.setAttribute('crossorigin', '*');
             s0.parentNode.insertBefore(s1, s0);
         })();
-    </script>
+    </script> --}}
     <!--End of Tawk.to Script-->
     {{-- tidio chat --}}
     {{-- <script src="//code.tidio.co/9tchimmf68dgq0kqv86grv509wmpkjpi.js" async></script> --}}
