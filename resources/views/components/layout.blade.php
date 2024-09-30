@@ -33,6 +33,32 @@
         })();
     </script>
     <!--End of Tawk.to Script-->
+    {{-- tidio chat --}}
+    {{-- <script src="//code.tidio.co/9tchimmf68dgq0kqv86grv509wmpkjpi.js" async></script> --}}
+    {{-- end tidio chat --}}
+    <div style="width: 200px;height:200px;">
+        <script src="{{ asset('js/snowfall.js') }}"></script>
+        <script>
+            let snowfall = new Snowfall({
+                // number of snowflakes
+                count: 100,
+                // min/max size
+                minRadius: 10,
+                maxRadius: 30,
+                // min/max speed
+                minSpeed: 1,
+                maxSpeed: 4,
+                // custom symbol or text for snowflakes
+                text: "\u2744",
+                // color of snowflakes
+                color: "#ffffff",
+                // z-index for the canvas
+                zIndex: "1000"
+            });
+        </script>
+    </div>
+
+
 </body>
 
 </html>
