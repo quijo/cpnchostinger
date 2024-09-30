@@ -49,6 +49,7 @@
                 <li><a onclick="hide()" href="admissions">admission</a></li>
                 <li><a onclick="hide()" href="academics">academics</a></li>
                 <li><a onclick="hide()" href="announcement">announcement</a></li>
+                <li><a onclick="hide()" href="announcement">central</a></li>
                 <!-- <li><a onclick="hide()" href="www.cpnc.globalnaz.com/" target="_blank">GNECsis</a></li> -->
             </ul>
             <buton class="primary-btn" style="cursor: pointer;" onclick="hide(); redirect() ">GNECsis</buton>
