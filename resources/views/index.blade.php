@@ -8,9 +8,9 @@
 
     <div class="announcement">
 
-        <x-card text="hello"></x-card>
+        {{-- <x-card />
         <x-card></x-card>
-        <x-card></x-card>
+        <x-card></x-card> --}}
 
     </div>
 
