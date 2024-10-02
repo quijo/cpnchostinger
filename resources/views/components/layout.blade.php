@@ -9,7 +9,8 @@
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>CPNC</title>
-    <link rel="icon" href="{{ asset('images/favicon.ico') }}" type="image/x-icon">
+    {{-- <link rel="shortcut icon" href="{{ asset('images/favicon.icon') }}" type="image/icon"> --}}
+    <link rel="shortcut icon" href="cpnc-logo.ico" type="image/icon">
 
 
 </head>
