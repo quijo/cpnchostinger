@@ -1,0 +1,7 @@
+.bghero{
+background:url('../images/bghero.png');
+height: 100vh;
+background-repeat: no-repeat;
+background-size:cover ;
+
+}

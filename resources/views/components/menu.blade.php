@@ -1,6 +1,6 @@
 <div class="con">
     <div class="topmenu">
-        <div class="shoolname">Central Philippine Nazarene College</div>
+        <div class="schoolname">Central Philippine Nazarene College</div>
         <div class="contact"><i class="fa-solid fa-phone"></i> +63 032 505-5131</div>
         <div class="email"><i class="fa-solid fa-at"></i> registrar@cpnc.edu.ph</div>
         <div class="address"><i class="fa-solid fa-envelope"></i> St. Mary's Drive, Apas Cebu City Philippines 6000</div>
