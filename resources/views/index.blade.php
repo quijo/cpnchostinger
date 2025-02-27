@@ -1,11 +1,8 @@
 <x-layout>
+    <x-hero></x-hero>
+    <x-about></x-about>
 
-<x-hero></x-hero>
 
-    {{-- <div class="coming gap-5">
-        <h1 class="text-3xl bg-red-700">Coming Soon!</h1>
-        <a class="text-2xl" href="https://vnbc.edu.ph">vnbc.edu.ph</a>
-    </div> --}}
 
     <div class="divider"> Announcement</div>
 

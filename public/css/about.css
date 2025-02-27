@@ -1,0 +1,31 @@
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+
+    color:dodgerblue;
+    padding: 15% 0 15% 0;
+}
+.about h1{
+    font-size: 3rem;
+    text-align: center;
+}
+.about p{
+    font-size: 1.2rem;
+    width: 70%;
+    text-align: center;
+    margin-top: 30px;
+    color:var(--peimeyblue)
+}
+.about .button{
+    margin-top: 30px;
+    padding:10px 20px;
+    background-color: var(primaryyellow);
+    border: none;
+    color:white;
+
+}
+
