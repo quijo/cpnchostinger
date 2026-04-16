@@ -21,7 +21,7 @@
 </head>
 
 <body>
-    <x-menu> </x-menu>
+    <!-- <x-menu> </x-menu> -->
 
     {{ $slot }}
 

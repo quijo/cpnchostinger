@@ -1,4 +1,4 @@
-<div class="con">
+<!-- <div class="con">
     <div class="topmenu">
         <div class="schoolname">Central Philippine Nazarene College</div>
         <div class="contact"><i class="fa-solid fa-phone"></i> +63 032 505-5131</div>
@@ -7,7 +7,6 @@
         <div class="social"><a href="https://www.facebook.com/cpncMain"><i class="fa-brands fa-facebook"></i></a></div>
     </div>
     <header>
-
         <div class="logo">
             <img src="../images/cpnc-logo.png" alt="cpnc logo">
             <h1>CPNC</h1>
@@ -76,4 +75,4 @@
             <li><a href="studentlife">Studnet Life</a></li>
         </ul>
     </div>
-</nav> --}}
+</nav> --}} -->
