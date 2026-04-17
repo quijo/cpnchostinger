@@ -8,16 +8,16 @@
     </div>
 
     {{-- DARK OVERLAY --}}
-    <div class="absolute inset-0 bg-black/80"></div>
+    <div class="absolute inset-0 bg-black/0"></div>
 
     {{-- CONTENT --}}
-    <div class="relative z-10 text-center px-6 max-w-3xl">
+    <div class="relative z-10 text-center px-6 max-w-3xl bg-black/70 p-10 rounded-3xl">
 
         <h1 class="text-3xl md:text-5xl font-bold leading-tight">
-            Central Philippine Nazarene College
+            WELCOME TO CPNC
         </h1>
 
-        <p class="mt-4 text-sm md:text-lg text-gray-200">
+        <p class="mt-4 text-sm md:text-lg">
             Equipping students with faith, excellence, and service for the future.
         </p>
 
