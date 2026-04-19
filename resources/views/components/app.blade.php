@@ -15,18 +15,18 @@
 
 
 
-   <!-- <script>
-    document.addEventListener("DOMContentLoaded", () => {
-    const btn = document.getElementById("menuBtn");
-    const menu = document.getElementById("mobileMenu");
 
-    if (!btn || !menu) return;
-
-    btn.addEventListener("click", () => {
-        menu.classList.toggle("hidden");
-    });
-});
-    </script> -->
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const startYear = 1964; // 🔥 CHANGE THIS to your founding year
+        const currentYear = new Date().getFullYear();
+        const years = currentYear - startYear;
+
+        document.getElementById("yearsCount").innerText = years + "+";
+    });
+</script>
+<x-footer />
 </body>
 </html>

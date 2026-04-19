@@ -63,10 +63,10 @@
                          x-transition
                          class="absolute mt-2 w-48 bg-white shadow-lg rounded-md border">
 
-                        <a href="visionmission" class="block px-4 py-2 hover:bg-gray-100 hover:text-blue-900 transition">Vision & Mission</a>
-                        <a href="history" class="block px-4 py-2 hover:bg-gray-100 hover:text-blue-900 transition">History</a>
-                        <a href="welcome" class="block px-4 py-2 hover:bg-gray-100 hover:text-blue-900 transition">Message</a>
-                        <a href="staff" class="block px-4 py-2 hover:bg-gray-100 hover:text-blue-900 transition">Staff</a>
+                        <a href="/visionmission" class="block px-4 py-2 hover:bg-gray-100 hover:text-blue-900 transition">Vision & Mission</a>
+                        <a href="/history" class="block px-4 py-2 hover:bg-gray-100 hover:text-blue-900 transition">History</a>
+                        <a href="/message" class="block px-4 py-2 hover:bg-gray-100 hover:text-blue-900 transition">Message</a>
+                      
 
                     </div>
                 </div>
@@ -112,15 +112,15 @@
 
             <div x-show="dropdown" class="pl-4 space-y-1">
 
-                <a href="visionmission" class="block hover:text-blue-900 transition">Vision & Mission</a>
-                <a href="history" class="block hover:text-blue-900 transition">History</a>
-                <a href="welcome" class="block hover:text-blue-900 transition">Message</a>
-                <a href="staff" class="block hover:text-blue-900 transition">Staff</a>
+                <a href="/visionmission" class="block hover:text-blue-900 transition">Vision & Mission</a>
+                <a href="/history" class="block hover:text-blue-900 transition">History</a>
+                <a href="/message" class="block hover:text-blue-900 transition">Message</a>
+              
 
             </div>
         </div>
 
-        <a href="admissions" class="block py-2 hover:text-blue-900 transition">Admissions</a>
+        <a href="/admissions" class="block py-2 hover:text-blue-900 transition">Admissions</a>
         <a href="academics" class="block py-2 hover:text-blue-900 transition">Academics</a>
 
         <!-- AUTH -->
