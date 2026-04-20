@@ -75,7 +75,7 @@
                 <a href="academics" class="hover:text-blue-900 transition">Academics</a>
 
                 <!-- AUTH -->
-                <a href="/login"
+                {{-- <a href="/login"
                    class="px-4 py-2 border rounded-md hover:bg-gray-100 transition">
                     Login
                 </a>
@@ -83,7 +83,7 @@
                 <a href="/register"
                    class="px-4 py-2 bg-blue-900 text-white rounded-md hover:bg-blue-800 transition">
                     Register
-                </a>
+                </a> --}}
 
             </div>
 
@@ -123,14 +123,14 @@
         <a href="/admissions" class="block py-2 hover:text-blue-900 transition">Admissions</a>
         <a href="academics" class="block py-2 hover:text-blue-900 transition">Academics</a>
 
-        <!-- AUTH -->
+        {{-- <!-- AUTH -->
         <a href="/login" class="block py-2 border rounded-md text-center hover:bg-gray-100 transition">
             Login
         </a>
 
         <a href="/register" class="block py-2 bg-blue-900 text-white rounded-md text-center hover:bg-blue-800 transition">
             Register
-        </a>
+        </a> --}}
 
     </div>
 

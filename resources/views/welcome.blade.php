@@ -148,8 +148,7 @@
         </h2>
 
         <p class="max-w-2xl mx-auto text-gray-300 mb-12">
-            We are dedicated to shaping lives through quality education, strong values,
-            and a commitment to excellence in everything we do.
+            At CPNC, we believe that education is not just about acquiring knowledge; it's about fostering a lifelong love for learning, nurturing character, and preparing students for success in an ever-evolving world. We invite you to explore the enriching educational opportunities we offer, as we strive to provide an environment where every student can thrive and reach their full potential.
         </p>
 
         <!-- Features -->
@@ -161,7 +160,7 @@
                 </div>
                 <h3 class="text-xl font-semibold mb-2">Academic Excellence</h3>
                 <p class="text-gray-300 text-sm">
-                    High-quality programs designed to prepare students for real-world success.
+                   Our curriculum is designed to challenge and inspire students, fostering critical thinking, creativity, and a passion for knowledge. With a team of dedicated and experienced educators, we are committed to providing a top-notch academic experience.
                 </p>
             </div>
 
@@ -169,9 +168,10 @@
                 <div class="text-green-400 text-4xl mb-4">
                     <i class="fa-solid fa-users"></i>
                 </div>
-                <h3 class="text-xl font-semibold mb-2">Strong Community</h3>
+                <h3 class="text-xl font-semibold mb-2">
+Holistic Development:</h3>
                 <p class="text-gray-300 text-sm">
-                    A supportive environment that nurtures collaboration and belonging.
+                   Beyond academics, we focus on the holistic development of each student. Our programs encompass not only intellectual growth but also character building, emotional intelligence, and social skills. We aim to mold well-rounded individuals who are prepared for success in all facets of life.
                 </p>
             </div>
 
@@ -179,9 +179,10 @@
                 <div class="text-yellow-400 text-4xl mb-4">
                     <i class="fa-solid fa-star"></i>
                 </div>
-                <h3 class="text-xl font-semibold mb-2">Faith & Values</h3>
+                <h3 class="text-xl font-semibold mb-2">
+Faith-Based Education:</h3>
                 <p class="text-gray-300 text-sm">
-                    Grounded in Christian principles that shape character and leadership.
+                    At CPNC, we integrate Christian values into every aspect of our educational approach. Our commitment to faith-based education ensures that students not only excel academically but also develop a strong moral compass, empathy, and a sense of purpose.
                 </p>
             </div>
 
