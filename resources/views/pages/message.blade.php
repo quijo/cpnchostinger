@@ -29,7 +29,7 @@
                 <!-- Text -->
                 <div>
                     <h2 class="text-2xl font-semibold text-gray-800">
-                        Dr. John A. Doe
+                        Rev. Leo Mahanlud
                     </h2>
                     <p class="text-blue-900 font-medium mb-4">
                         College President
