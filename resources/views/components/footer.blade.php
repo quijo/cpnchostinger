@@ -14,21 +14,29 @@
         <!-- Contact Form -->
         <div>
             <h2 class="text-xl font-semibold mb-4">Contact Us</h2>
-            <form class="space-y-4">
-                <input type="text" placeholder="Your Name"
-                    class="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:outline-none">
-                
-                <input type="email" placeholder="Your Email"
-                    class="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:outline-none">
-                
-                <textarea placeholder="Your Message" rows="4"
-                    class="w-full p-3 rounded bg-gray-800 border border-gray-700 focus:outline-none"></textarea>
-                
-                <button type="submit"
-                    class="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded font-semibold">
-                    Send Message
-                </button>
-            </form>
+           <form method="POST" action="{{ route('contact.send') }}" class="space-y-4">
+    @csrf
+
+    <input type="text" name="name" placeholder="Your Name"
+        class="w-full p-3 rounded bg-gray-800 border border-gray-700">
+
+    <input type="email" name="email" placeholder="Your Email"
+        class="w-full p-3 rounded bg-gray-800 border border-gray-700">
+
+    <textarea name="message" placeholder="Your Message" rows="4"
+        class="w-full p-3 rounded bg-gray-800 border border-gray-700"></textarea>
+
+    <button type="submit"
+        class="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded font-semibold">
+        Send Message
+    </button>
+
+    @if(session('success'))
+        <p class="text-green-400 text-sm mt-2">
+            {{ session('success') }}
+        </p>
+    @endif
+</form>
         </div>
 
         <!-- Google Map -->
