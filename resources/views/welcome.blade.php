@@ -33,7 +33,7 @@
                     Apply Now
                 </a>
 
-                <a href="/about"
+                <a href="/more-about-us"
                 class="border border-white px-6 py-3 rounded-md hover:bg-white hover:text-black">
                     Learn More
                 </a>
@@ -52,7 +52,7 @@
 
         <!-- Image -->
         <div class="relative">
-            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644"
+            <img src="images/about.jpg"
                     alt="About us"
                     class="rounded-2xl shadow-lg">
 
@@ -148,7 +148,7 @@
         </h2>
 
         <p class="max-w-2xl mx-auto text-gray-300 mb-12">
-            At CPNC, we believe that education is not just about acquiring knowledge; it's about fostering a lifelong love for learning, nurturing character, and preparing students for success in an ever-evolving world. We invite you to explore the enriching educational opportunities we offer, as we strive to provide an environment where every student can thrive and reach their full potential.
+           For six decades, Central Philippine Nazarene College has remained steadfast in its mission to nurture and to guide extraordinary individuals who emerge as tranformative graduates.  Since its establishment in 1964, our unwavering commitment to mentoring has shape countless lives, cultivating exceptional individuals equipped to create lasting impact in their communities and beyond.  Join our legacy of tranformational and become a part of this remarkable journed!
         </p>
 
         <!-- Features -->

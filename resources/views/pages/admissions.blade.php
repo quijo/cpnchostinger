@@ -25,7 +25,7 @@
         <!-- Navigation Blocks -->
         <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-12 text-center">
 
-            <a href="#admissionprocess" class="bg-white shadow rounded-xl p-4 hover:bg-blue-900 hover:text-white transition font-semibold">
+            <a href="/admission-process" class="bg-white shadow rounded-xl p-4 hover:bg-blue-900 hover:text-white transition font-semibold">
                 Admission Process
             </a>
 

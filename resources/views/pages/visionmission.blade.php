@@ -26,9 +26,7 @@
                 </div>
 
                 <p class="text-gray-600 leading-relaxed">
-                    To provide quality Christ-centered education that develops students 
-                    intellectually, spiritually, and socially, equipping them to become 
-                    responsible leaders and servants in their communities.
+                   Mentoring every generation of transformational leaders through quality holistic educaiton adn exemplary Christ-centered life that infuence the church and the global community.
                 </p>
             </div>
 
@@ -42,9 +40,7 @@
                 </div>
 
                 <p class="text-gray-600 leading-relaxed">
-                    To be a leading institution recognized for academic excellence and 
-                    spiritual formation, producing graduates who impact society through 
-                    faith, integrity, and service.
+                    A leading instituion of excellent Christian Education and creative interdisciplinary integration.
                 </p>
             </div>
 
@@ -57,11 +53,10 @@
             </h3>
 
             <div class="flex flex-wrap justify-center gap-4">
-                <span class="bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-medium">Faith</span>
-                <span class="bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-medium">Integrity</span>
-                <span class="bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-sm font-medium">Excellence</span>
-                <span class="bg-red-100 text-red-700 px-4 py-2 rounded-full text-sm font-medium">Service</span>
-                <span class="bg-yellow-100 text-yellow-700 px-4 py-2 rounded-full text-sm font-medium">Leadership</span>
+                <span class="bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-medium">Academic Excellence</span>
+                <span class="bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-medium">Christlike Charactier</span>
+                <span class="bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-sm font-medium">Transformational Leaderhip</span>
+                <span class="bg-red-100 text-red-700 px-4 py-2 rounded-full text-sm font-medium">Creative Wisdom</span>
             </div>
         </div>
 
