@@ -18,6 +18,9 @@ Route::get('/admissions', fn() => view('pages.admissions'))->name('admissions');
 Route::get('/academics', fn() => view('pages.academics'))->name('academic');
 Route::get('/admission-process', fn() => view('pages.admission-process'))->name('admission-process');
 Route::get('/more-about-us', fn() => view('pages.learnmore-about-cpnc'))->name('more-about-us');
+// Route::get('/downloads', fn() => view('pages.download'))->name('downloads');
+Route::get('/downloads', fn()=>view('pages.download'))->name('downloads');
+
 
 
 Route::post('/contact', [ContactController::class, 'send'])->name('contact.send');
