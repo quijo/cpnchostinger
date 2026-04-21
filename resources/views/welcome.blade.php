@@ -270,6 +270,69 @@ Faith-Based Education:</h3>
     </div>
 </section>
 
+{{-- ----------- --}}
+{{-- PROMOTIONAL --}}
+{{-- ----------- --}}
+
+<!-- Promotional Section (Full Image Cards with Bottom Gradient Overlay) -->
+<section class="bg-gray-50 py-16">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-10">Our Academic Programs</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+      <!-- Card -->
+      <div class="promo-card opacity-0 translate-y-10 transition-all duration-700 relative rounded-2xl overflow-hidden shadow-lg group hover:-translate-y-2 hover:shadow-2xl">
+        <img src="/images/basiced/preschool.jpg" alt="Preschool" class="w-full h-[420px] object-contain bg-orange-400">
+
+        <!-- Gradient Overlay (transparent to dark) -->
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+
+        <!-- Content -->
+        <div class="absolute bottom-0 p-5 text-white">
+          <h3 class="text-xl font-semibold">Preschool</h3>
+          <p class="text-sm opacity-90">Nursery & Kindergarten</p>
+          <a href="#" class="inline-block mt-3 bg-white text-black px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-200">Learn More</a>
+        </div>
+      </div>
+
+      <!-- Card -->
+      <div class="promo-card opacity-0 translate-y-10 transition-all duration-700 relative rounded-2xl overflow-hidden shadow-lg group hover:-translate-y-2 hover:shadow-2xl">
+        <img src="/images/basiced/elem.jpg" alt="Elementary" class="w-full h-[420px] object-contain bg-blue-950">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+        <div class="absolute bottom-0 p-5 text-white">
+          <h3 class="text-xl font-semibold">Elementary</h3>
+          <p class="text-sm opacity-90">Grade 1–6</p>
+          <a href="#" class="inline-block mt-3 bg-white text-black px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-200">Learn More</a>
+        </div>
+      </div>
+
+      <!-- Card -->
+      <div class="promo-card opacity-0 translate-y-10 transition-all duration-700 relative rounded-2xl overflow-hidden shadow-lg group hover:-translate-y-2 hover:shadow-2xl">
+        <img src="/images/basiced/jhs.jpg" alt="JHS" class="w-full h-[420px] object-contain bg-blue-950">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+        <div class="absolute bottom-0 p-5 text-white">
+          <h3 class="text-xl font-semibold">Junior High School</h3>
+          <p class="text-sm opacity-90">Grade 7–10</p>
+          <a href="#" class="inline-block mt-3 bg-white text-black px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-200">Learn More</a>
+        </div>
+      </div>
+
+      <!-- Card -->
+      <div class="promo-card opacity-0 translate-y-10 transition-all duration-700 relative rounded-2xl overflow-hidden shadow-lg group hover:-translate-y-2 hover:shadow-2xl">
+        <img src="/images/college/college.jpg" alt="College" class="w-full h-[420px] object-contain bg-blue-950">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+        <div class="absolute bottom-0 p-5 text-white">
+          <h3 class="text-xl font-semibold">College</h3>
+          <p class="text-sm opacity-90">Undergraduate Programs</p>
+          <a href="#" class="inline-block mt-3 bg-white text-black px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-200">Learn More</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
 {{-- ----- --}}
 {{-- STAFF --}}

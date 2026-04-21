@@ -22,5 +22,12 @@ Route::get('/more-about-us', fn() => view('pages.learnmore-about-cpnc'))->name('
 Route::get('/downloads', fn()=>view('pages.download'))->name('downloads');
 
 
+    Route::get('/philmicteen', fn () => view('pages.philmicteen.dashboard'))->name('philmicteen');
+    Route::get('/members', fn () => view('pages.philmicteen.dashboard'))->name('members');
+    Route::get('/events', fn () => view('pages.philmicteen.dashboard'))->name('events');
+    Route::get('/media', fn () => view('pages.philmicteen.dashboard'))->name('media');
+    Route::get('/settings', fn () => view('pages.philmicteen.dashboard'))->name('settings');
+
+
 
 Route::post('/contact', [ContactController::class, 'send'])->name('contact.send');

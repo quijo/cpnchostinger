@@ -73,6 +73,7 @@
 
                 <a href="admissions" class="hover:text-blue-900 transition">Admissions</a>
                 <a href="academics" class="hover:text-blue-900 transition">Academics</a>
+                <a href="{{route('philmicteen')}}" class="hover:text-blue-900 transition">Philmicteen</a>
                 <a href="{{ route('downloads') }}" class ="inline-flex items-center gap-2 bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700">
     ⬇ Download
 </a>

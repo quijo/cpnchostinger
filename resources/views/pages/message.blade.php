@@ -52,7 +52,7 @@
 
                     <!-- Signature -->
                     <div class="mt-6">
-                        <p class="text-gray-800 font-semibold">Dr. John A. Doe</p>
+                        <p class="text-gray-800 font-semibold">Rev. Leo Mahanlud</p>
                         <p class="text-sm text-gray-500">College President</p>
                     </div>
                 </div>
