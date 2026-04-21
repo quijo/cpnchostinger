@@ -129,7 +129,7 @@
 
 <style>
     .parallax-bg {
-        background-image: url('https://images.unsplash.com/photo-1509062522246-3755977927d7');
+        background-image: url('/images/about1.jpg');
         background-attachment: fixed;
         background-size: cover;
         background-position: center;
