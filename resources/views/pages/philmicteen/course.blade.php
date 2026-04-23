@@ -318,7 +318,6 @@
                 </div>
                 <div x-show="open" x-transition class="mt-4 text-sm text-gray-700">
                     <p>
-                        
                         HOMILETICS - This course introduces the processes and skills necessary for effective communication both orally and in writing, the transactional process of public speaking, and a variety of communication methods. Students learn the principles of understanding and adapting to the audience, identifying the communication purpose, organizing discourse to accomplish that purpose, developing and supporting the main idea with specific data, and revising, practicing, and preparing multi-media communication to various audiences.     
                     </p>
                 </div>
