@@ -21,7 +21,7 @@
 
                 <!-- Image -->
                 <div class="flex-shrink-0">
-                    <img src="/images/principal.jpg"
+                    <img src="/images/adco/leo.jpg"
                          alt="President"
                          class="w-40 h-40 rounded-full object-cover border-4 border-blue-900 shadow-md">
                 </div>
@@ -29,10 +29,10 @@
                 <!-- Text -->
                 <div>
                     <h2 class="text-2xl font-semibold text-gray-800">
-                        Rev. Leo Mahanlud
+                        Rev. Leo J. Mahanlud
                     </h2>
                     <p class="text-blue-900 font-medium mb-4">
-                        College President
+                        OIC President
                     </p>
 
                     <p class="text-gray-600 leading-relaxed mb-4">
@@ -52,8 +52,8 @@
 
                     <!-- Signature -->
                     <div class="mt-6">
-                        <p class="text-gray-800 font-semibold">Rev. Leo Mahanlud</p>
-                        <p class="text-sm text-gray-500">College President</p>
+                        <p class="text-gray-800 font-semibold">Rev. Leo J. Mahanlud</p>
+                        <p class="text-sm text-gray-500">OIC President</p>
                     </div>
                 </div>
 

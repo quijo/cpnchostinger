@@ -35,7 +35,7 @@
         document.getElementById("yearsCount").innerText = years + "+";
     });
 </script>
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <x-nav></x-nav>
@@ -63,6 +63,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   cards.forEach(card => observer.observe(card));
 });
+</script>
+<script>
+    const burger = document.getElementById('burgerBtn');
+
+    burger.addEventListener('click', () => {
+        burger.classList.toggle('active');
+    });
 </script>
 <x-footer />
 </body>

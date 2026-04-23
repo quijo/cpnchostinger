@@ -3,20 +3,21 @@
 
         <!-- HERO -->
         <div class="mb-12">
-            <img src="/images/philmicteen/program.jpg"
-                 alt="Program Design"
-                 class="w-full h-[280px] object-cover rounded-2xl shadow">
-        </div>
+            <!-- Background Image -->
+            <div class=" pl-10 flex flex-col justify-center items-start  text-left  w-full h-[280px] bg-cover bg-center rounded-2xl shadow" style="background-image: url('{{ asset('images/philmicteen/about.png') }}')">
 
-        <!-- TITLE -->
-        <div class="text-center mb-12">
-            <h1 class="text-4xl font-bold text-gray-800">
-                Program Design
-            </h1>
-            <p class="text-gray-600 mt-3">
+                    <!-- Text -->
+                            <h5 class="text-4xl font-bold text-white">
+                               Program Design
+                            </h5>
+                            <p class="text-white mt-3">
                 Ministry Education Programs of CPNC
             </p>
+                         
+            </div>
         </div>
+
+      
 
         <!-- A. BASIC PROGRAM -->
         <section class="mb-16">

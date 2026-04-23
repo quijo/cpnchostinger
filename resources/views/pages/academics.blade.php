@@ -96,7 +96,7 @@
             </p>
 
             <ul class="list-disc pl-6 text-gray-600 space-y-2">
-                <li>Library and Digital Library Access</li>
+                <li><a href="https://vnbc-gnec.kari.opalsinfo.net/bin/omf#/login/vnbc-gnec.kari.opalsinfo.net" target="_blank">Library and Digital Library Access</li></a>
                 <li>Online Learning Materials</li>
                 <li>Faculty Consultation Hours</li>
                 <li>Spiritual Formation Materials</li>

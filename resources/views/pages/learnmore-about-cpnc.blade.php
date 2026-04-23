@@ -25,10 +25,10 @@
                         to academic excellence and spiritual formation.
                     </p>
 
-                    <a href="https://www.cpnc.edu.ph/"
+                     <a href="https://www.facebook.com/cpncMain"
                        target="_blank"
                        class="inline-block bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
-                        Visit Official Website
+                        Visit Official Facebook Page
                     </a>
                 </div>
 
@@ -56,7 +56,7 @@
                         Discover available programs for College, Basic Education, and Theology.
                     </p>
 
-                    <a href="/programs"
+                    <a href="/academics"
                        class="inline-block bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700">
                         View Programs
                     </a>

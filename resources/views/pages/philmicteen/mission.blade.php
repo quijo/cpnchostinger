@@ -1,19 +1,21 @@
 <x-app>
     <div class="max-w-5xl mx-auto px-6 py-12">
 
-        <!-- HERO -->
+       
+         <!-- HERO -->
         <div class="mb-12">
-            <img src="/images/philmicteen/hero.jpg"
-                 alt="PhilMicTEEN"
-                 class="w-full h-[280px] object-cover rounded-2xl shadow">
+            <!-- Background Image -->
+            <div class=" pl-10 flex flex-col justify-center items-start  text-left  w-full h-[280px] bg-cover bg-center rounded-2xl shadow" style="background-image: url('{{ asset('images/philmicteen/about.png') }}')">
+
+                    <!-- Text -->
+                            <h5 class="text-3xl font-bold text-white">
+                               PhilMicTEEN Mission & Program Overview
+                            </h5>
+                         
+            </div>
         </div>
 
-        <!-- TITLE -->
-        <div class="text-center mb-12">
-            <h1 class="text-4xl font-bold text-gray-800">
-                PhilMicTEEN Mission & Program Overview
-            </h1>
-        </div>
+     
 
         <!-- MISSION -->
         <section class="mb-16">

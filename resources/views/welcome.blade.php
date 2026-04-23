@@ -30,7 +30,7 @@
             <div class="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
                 <a href="/admissions"
                 class="bg-blue-900 hover:bg-blue-800 px-6 py-3 rounded-md font-semibold">
-                    Apply Now
+                    Enroll Now
                 </a>
 
                 <a href="/more-about-us"
@@ -113,7 +113,7 @@
             </div>
 
             <!-- CTA -->
-            <a href="#"
+            <a href="/more-about-us"
                 class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
                 Learn More
             </a>
@@ -262,8 +262,13 @@ Faith-Based Education:</h3>
 
             <a href="https://facebook.com/cpncMain"
                target="_blank"
-               class="inline-block bg-gray-800 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-900 transition">
+               class="inline-block bg-gray-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-900 transition">
                 Facebook Page
+            </a>
+            <a href="/admissions"
+               target="_blank"
+               class="inline-block bg-red-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-900 transition">
+                Enroll Now
             </a>
         </div>
 
@@ -292,7 +297,7 @@ Faith-Based Education:</h3>
         <div class="absolute bottom-0 p-5 text-white">
           <h3 class="text-xl font-semibold">Preschool</h3>
           <p class="text-sm opacity-90">Nursery & Kindergarten</p>
-          <a href="#" class="inline-block mt-3 bg-white text-black px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-200">Learn More</a>
+          <a href="/more-about-us" class="inline-block mt-3 bg-white text-black px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-200">Learn More</a>
         </div>
       </div>
 
@@ -303,7 +308,7 @@ Faith-Based Education:</h3>
         <div class="absolute bottom-0 p-5 text-white">
           <h3 class="text-xl font-semibold">Elementary</h3>
           <p class="text-sm opacity-90">Grade 1–6</p>
-          <a href="#" class="inline-block mt-3 bg-white text-black px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-200">Learn More</a>
+          <a href="more-about-us" class="inline-block mt-3 bg-white text-black px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-200">Learn More</a>
         </div>
       </div>
 
@@ -314,7 +319,7 @@ Faith-Based Education:</h3>
         <div class="absolute bottom-0 p-5 text-white">
           <h3 class="text-xl font-semibold">Junior High School</h3>
           <p class="text-sm opacity-90">Grade 7–10</p>
-          <a href="#" class="inline-block mt-3 bg-white text-black px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-200">Learn More</a>
+          <a href="more-about-us" class="inline-block mt-3 bg-white text-black px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-200">Learn More</a>
         </div>
       </div>
 
@@ -325,7 +330,7 @@ Faith-Based Education:</h3>
         <div class="absolute bottom-0 p-5 text-white">
           <h3 class="text-xl font-semibold">College</h3>
           <p class="text-sm opacity-90">Undergraduate Programs</p>
-          <a href="#" class="inline-block mt-3 bg-white text-black px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-200">Learn More</a>
+          <a href="more-about-us" class="inline-block mt-3 bg-white text-black px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-200">Learn More</a>
         </div>
       </div>
 

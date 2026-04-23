@@ -58,10 +58,10 @@
             <p class="text-gray-400 mb-4">Stay connected through our social platforms</p>
             
             <div class="flex space-x-4">
-                <a href="#" class="bg-gray-800 p-3 rounded hover:bg-blue-600">
+                <a href="https://www.facebook.com/cpncMain" class="bg-gray-800 p-3 rounded hover:bg-blue-600">
                     <i class="fab fa-facebook-f"></i>
                 </a>
-                <a href="#" class="bg-gray-800 p-3 rounded hover:bg-sky-500">
+                {{-- <a href="#" class="bg-gray-800 p-3 rounded hover:bg-sky-500">
                     <i class="fab fa-twitter"></i>
                 </a>
                 <a href="#" class="bg-gray-800 p-3 rounded hover:bg-pink-500">
@@ -69,7 +69,7 @@
                 </a>
                 <a href="#" class="bg-gray-800 p-3 rounded hover:bg-red-600">
                     <i class="fab fa-youtube"></i>
-                </a>
+                </a> --}}
             </div>
 
             <div class="mt-6 text-gray-500 text-sm">

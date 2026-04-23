@@ -62,7 +62,7 @@
 
                     <li>
                         📄 Enrollment Form
-                        <a href="/files/basic-ed/enrollment-form.docx"
+                        <a href="/files/basiced/enrollment-form.docx"
                            class="text-green-600 hover:underline block"
                            download>
                             ⬇ Download
@@ -70,13 +70,33 @@
                     </li>
 
                     <li>
-                        📄 Requirements Sheet
-                        <a href="/files/basic-ed/requirements.docx"
+                        📄 Parental Commitment
+                        <a href="/files/basiced/parental-commitment.doc"
                            class="text-green-600 hover:underline block"
                            download>
                             ⬇ Download
                         </a>
                     </li>
+
+                    <li>
+                        📄 Data Privacy
+                        <a href="/files/basiced/data-privacy.doc"
+                           class="text-green-600 hover:underline block"
+                           download>
+                            ⬇ Download
+                        </a>
+                    </li>
+
+                    
+                    <li>
+                        📄 Undertaking and Waiver
+                        <a href="/files/basiced/undertaking-waiver.doc"
+                           class="text-green-600 hover:underline block"
+                           download>
+                            ⬇ Download
+                        </a>
+                    </li>
+
 
                 </ul>
             </div>
@@ -137,22 +157,15 @@
                 <ul class="space-y-3 text-sm text-gray-700">
 
                     <li>
-                        📄 School Handbook
-                        <a href="/files/handbook.docx"
+                        📄 College Catalogue 2025-2029
+                        <a href="/files/college/catalogue.pdf"
                            class="text-purple-600 hover:underline block"
                            download>
                             ⬇ Download
                         </a>
                     </li>
 
-                    <li>
-                        📄 School Calendar
-                        <a href="/files/calendar.docx"
-                           class="text-purple-600 hover:underline block"
-                           download>
-                            ⬇ Download
-                        </a>
-                    </li>
+    
 
                 </ul>
             </div>

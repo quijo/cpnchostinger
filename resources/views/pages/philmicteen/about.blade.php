@@ -3,20 +3,21 @@
 
         <!-- HERO -->
         <div class="mb-12">
-            <img src="/images/philmicteen/about.jpg"
-                 alt="PhilMicTEEN About"
-                 class="w-full h-[280px] object-cover rounded-2xl shadow">
+            <!-- Background Image -->
+            <div class=" pl-10 flex flex-col justify-center items-start  text-left  w-full h-[280px] bg-cover bg-center rounded-2xl shadow" style="background-image: url('{{ asset('images/philmicteen/about.png') }}')">
+
+                    <!-- Text -->
+                            <h1 class="text-4xl font-bold text-white">
+                                About PhilMicTEEN
+                            </h1>
+                            <p class="text-white mt-3 text-lg">
+                                Equipping Called Leaders. Empowering the Church.
+                            </p>
+                        
+            </div>
         </div>
 
-        <!-- TITLE -->
-        <div class="text-center mb-12">
-            <h1 class="text-4xl font-bold text-gray-800">
-                About PhilMicTEEN
-            </h1>
-            <p class="text-gray-600 mt-3 text-lg">
-                Equipping Called Leaders. Empowering the Church.
-            </p>
-        </div>
+      
 
         <!-- INTRO -->
         <section class="mb-16">
