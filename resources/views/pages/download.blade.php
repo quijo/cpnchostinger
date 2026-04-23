@@ -12,7 +12,7 @@
         </div>
 
         <!-- GRID -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 
             <!-- College -->
             <div class="bg-white rounded-2xl shadow p-6">
@@ -81,6 +81,53 @@
                 </ul>
             </div>
 
+               <!-- PhilMicTEEN -->
+            <div class="bg-white rounded-2xl shadow p-6">
+                <h2 class="text-lg font-semibold text-blue-600 mb-4">
+                    PhilMicTEEN
+                </h2>
+
+                <ul class="space-y-3 text-sm text-gray-700">
+
+                    <li>
+                        📄 Application Form
+                        <a href="/files/college/application.docx"
+                           class="text-blue-600 hover:underline block"
+                           download>
+                            ⬇ Download
+                        </a>
+                    </li>
+
+                    <li>
+                        📄 Layman Recommendation
+                        <a href="/files/college/laymans-recommendation.docx"
+                           class="text-blue-600 hover:underline block"
+                           download>
+                            ⬇ Download
+                        </a>
+                    </li>
+
+                    <li>
+                        📄 Pastor Recommendation
+                        <a href="/files/college/pastors-recommendation.docx"
+                           class="text-blue-600 hover:underline block"
+                           download>
+                            ⬇ Download
+                        </a>
+                    </li>
+
+                        <li>
+                        📄 Data Privacy
+                        <a href="/files/philmicteen/data_privacy.doc"
+                           class="text-blue-600 hover:underline block"
+                           download>
+                            ⬇ Download
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
             <!-- General -->
             <div class="bg-white rounded-2xl shadow p-6">
                 <h2 class="text-lg font-semibold text-purple-600 mb-4">
@@ -121,7 +168,7 @@
                 If you cannot download forms, please contact the registrar or visit the admissions office.
             </p>
 
-            <a href="/contact"
+            <a href="#contact"
                class="inline-block mt-4 bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700">
                 Contact Us
             </a>

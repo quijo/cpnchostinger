@@ -231,6 +231,15 @@
         </div>
 
     </div>
+
+
+    <!-- CTA -->
+        <div class="text-center mt-16">
+            <a href="/"
+               class="inline-block bg-red-600 text-white px-6 py-3 rounded-xl text-lg hover:bg-red-700 transition">
+                Back to Home
+            </a>
+        </div>
 </section>
 
 </x-app>

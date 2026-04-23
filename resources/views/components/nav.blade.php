@@ -73,23 +73,38 @@
 
                 <a href="admissions" class="hover:text-blue-900 transition">Admissions</a>
                 <a href="academics" class="hover:text-blue-900 transition">Academics</a>
-                <a href="{{route('philmicteen')}}" class="hover:text-blue-900 transition">Philmicteen</a>
+
+
+                {{-- PHILMICTEEN DROPDOWN --}}
+                 <div x-data="{ dropdown: false }" class="relative">
+                    <button @click="dropdown = !dropdown"
+                            class="flex items-center gap-1 hover:text-blue-900 transition">
+                        PhilMicTeen ▾
+                    </button>
+                    <div x-show="dropdown"
+                         @click.outside="dropdown = false"
+                         x-transition
+                         class="absolute mt-2 w-48 bg-white shadow-lg rounded-md border">
+                        <a href="{{route('about')}}" class="block px-4 py-2 hover:bg-gray-100 hover:text-blue-900 transition">About</a>
+                        <a href="/downloads" class="block px-4 py-2 hover:bg-gray-100 hover:text-blue-900 transition">Enrollement Forms</a>
+                        <a href="/history" class="block px-4 py-2 hover:bg-gray-100 hover:text-blue-900 transition">CPNC History</a>
+                        <a href="/mission" class="block px-4 py-2 hover:bg-gray-100 hover:text-blue-900 transition">Mission</a>
+                        <a href="/program" class="block px-4 py-2 hover:bg-gray-100 hover:text-blue-900 transition">Program Design</a>
+                        <a href="/course" class="block px-4 py-2 hover:bg-gray-100 hover:text-blue-900 transition">Course of Study</a>
+                        <a href="/instructor" class="block px-4 py-2 hover:bg-gray-100 hover:text-blue-900 transition">Instructor</a>
+                        <a href="/licensing" class="block px-4 py-2 hover:bg-gray-100 hover:text-blue-900 transition">licensing and Ordination</a>
+                        <a href="/dbm" class="block px-4 py-2 hover:bg-gray-100 hover:text-blue-900 transition">The District Board of Ministry</a>
+                    </div>
+
+                </div>
                 <a href="{{ route('downloads') }}" class ="inline-flex items-center gap-2 bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700">
     ⬇ Download
 </a>
 
-                <!-- AUTH -->
-                {{-- <a href="/login"
-                   class="px-4 py-2 border rounded-md hover:bg-gray-100 transition">
-                    Login
-                </a>
-
-                <a href="/register"
-                   class="px-4 py-2 bg-blue-900 text-white rounded-md hover:bg-blue-800 transition">
-                    Register
-                </a> --}}
 
             </div>
+
+
 
             <!-- MOBILE BUTTON -->
             <button @click="open = !open" class="md:hidden text-2xl">
@@ -126,18 +141,42 @@
 
         <a href="/admissions" class="block py-2 hover:text-blue-900 transition">Admissions</a>
         <a href="academics" class="block py-2 hover:text-blue-900 transition">Academics</a>
-        <a class="inline-flex items-center gap-2 bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700">
+
+          <!-- Mobile Dropdown -->
+        <div x-data="{ dropdown: false }">
+
+            <button @click="dropdown = !dropdown"
+                    class="w-full text-left font-semibold">
+                Philmicteen ▾
+            </button>
+
+            <div x-show="dropdown" class="pl-4 space-y-1">
+
+                <a href="/about" class="block hover:text-blue-900 transition">about</a>
+                <a href="/downloads" class="block hover:text-blue-900 transition">Enrollment Forms</a>
+                <a href="/history" class="block hover:text-blue-900 transition">CPNC History</a>
+                <a href="/mission" class="block hover:text-blue-900 transition">Mission</a>
+                <a href="/program" class="block hover:text-blue-900 transition">Program</a>
+                <a href="/course" class="block hover:text-blue-900 transition">Course</a>
+                <a href="/instructor" class="block hover:text-blue-900 transition">instructor</a>
+                <a href="/licensing" class="block hover:text-blue-900 transition">Licensing and Ordination</a>
+                <a href="/dbm" class="block hover:text-blue-900 transition">The District Board of Ministry</a>
+
+              
+
+            </div>
+        </div>
+
+
+
+        <a href="{{ route('downloads') }}" class="inline-flex items-center gap-2 bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700">
     ⬇ Download
 </a>
 
-        {{-- <!-- AUTH -->
-        <a href="/login" class="block py-2 border rounded-md text-center hover:bg-gray-100 transition">
-            Login
-        </a>
 
-        <a href="/register" class="block py-2 bg-blue-900 text-white rounded-md text-center hover:bg-blue-800 transition">
-            Register
-        </a> --}}
+
+
+       
 
     </div>
 

@@ -22,12 +22,17 @@ Route::get('/more-about-us', fn() => view('pages.learnmore-about-cpnc'))->name('
 Route::get('/downloads', fn()=>view('pages.download'))->name('downloads');
 
 
-    Route::get('/philmicteen', fn () => view('pages.philmicteen.dashboard'))->name('philmicteen');
-    Route::get('/members', fn () => view('pages.philmicteen.dashboard'))->name('members');
-    Route::get('/events', fn () => view('pages.philmicteen.dashboard'))->name('events');
-    Route::get('/media', fn () => view('pages.philmicteen.dashboard'))->name('media');
-    Route::get('/settings', fn () => view('pages.philmicteen.dashboard'))->name('settings');
-
+  
+    Route::get('/mission', fn () => view('pages.philmicteen.mission'))->name('mission');
+    Route::get('/about', fn () => view('pages.philmicteen.about'))->name('about');
+    Route::get('/program', fn () => view('pages.philmicteen.program'))->name('program');
+    Route::get('/course', fn () => view('pages.philmicteen.course'))->name('course');
+    Route::get('/instructor', fn () => view('pages.philmicteen.instructor'))->name('instructor');
+    Route::get('/licensing', fn () => view('pages.philmicteen.licensing'))->name('licensing');
+    Route::get('/dbm', fn () => view('pages.philmicteen.dbm'))->name('dbm');
+    
+    
+   
 
 
 Route::post('/contact', [ContactController::class, 'send'])->name('contact.send');
