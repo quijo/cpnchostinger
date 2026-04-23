@@ -32,15 +32,6 @@ Route::get('/downloads', fn()=>view('pages.download'))->name('downloads');
     Route::get('/dbm', fn () => view('pages.philmicteen.dbm'))->name('dbm');
     
     
-   Route::post('/webhook/deploy', function () {
-
-    $output = [];
-    exec('cd /home/YOUR_USER/domains/cpnc.edu.ph/public_html && git pull origin main 2>&1', $output);
-
-    file_put_contents(storage_path('logs/webhook.txt'), implode("\n", $output));
-
-    return response('ok');
-});
-
+ 
 
 Route::post('/contact', [ContactController::class, 'send'])->name('contact.send');
