@@ -262,7 +262,7 @@ Faith-Based Education:</h3>
 
             <a href="https://facebook.com/cpncMain"
                target="_blank"
-               class="inline-block bg-gray-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-900 transition">
+               class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-900 transition">
                 Facebook Page
             </a>
             <a href="/admissions"
