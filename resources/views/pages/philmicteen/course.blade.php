@@ -22,7 +22,7 @@
                 <!-- Header -->
                 <div @click="open = !open">
                     <h2 class="text-lg font-semibold text-blue-600">
-                        Inroduction to the Bible
+                        Introduction to the Bible
                     </h2>
                     <p class="text-sm text-gray-500">
                         Course Code: B10 
