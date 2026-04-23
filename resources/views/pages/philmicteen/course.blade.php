@@ -379,7 +379,7 @@
             <div x-data="{ open: false }" class="bg-white rounded-2xl shadow p-6 cursor-pointer">
                 <div @click="open = !open">
                     <h2 class="text-lg font-semibold text-indigo-600">
-                       Commmunity Engagement
+                       Community Engagement
                     </h2>
                     <p class="text-sm text-gray-500">
                         Course Code: PR20
