@@ -415,7 +415,7 @@
             <div x-data="{ open: false }" class="bg-white rounded-2xl shadow p-6 cursor-pointer">
                 <div @click="open = !open">
                     <h2 class="text-lg font-semibold text-purple-600">
-                       Worl Religions and Apologetic
+                       World Religions and Apologetic
                     </h2>
                     <p class="text-sm text-gray-500">
                         Course Code: IS30
