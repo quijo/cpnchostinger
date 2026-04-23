@@ -338,7 +338,7 @@ Faith-Based Education:</h3>
 {{-- STAFF --}}
 {{-- ----- --}}
 
-<section class="bg-gray-50 py-16 px-6 lg:px-20">
+{{-- <section class="bg-gray-50 py-16 px-6 lg:px-20">
     <div class="max-w-6xl mx-auto">
 
         <!-- Header -->
@@ -391,6 +391,165 @@ Faith-Based Education:</h3>
         </div>
 
     </div>
+</section> --}}
+
+
+<section class="bg-gray-50 py-16 px-6 lg:px-20" x-data="staffComponent()">
+
+    <div class="max-w-7xl mx-auto">
+
+        <!-- HEADER -->
+        <div class="text-center mb-10">
+            <h1 class="text-4xl font-bold text-blue-900">Our People</h1>
+            <p class="text-gray-600 mt-3">
+                Meet the dedicated staff of Central Philippine Nazarene College
+            </p>
+        </div>
+
+        <!-- FILTER BUTTONS -->
+        <div class="flex flex-wrap justify-center gap-3 mb-10">
+
+            <button @click="filter='all'" :class="btnClass('all')"
+                class="px-4 py-2 rounded-full shadow">All</button>
+
+            <button @click="filter='adco'" :class="btnClass('adco')"
+                class="px-4 py-2 rounded-full shadow">ADCO</button>
+
+            <button @click="filter='college'" :class="btnClass('college')"
+                class="px-4 py-2 rounded-full shadow">College</button>
+
+            <button @click="filter='basiced'" :class="btnClass('basiced')"
+                class="px-4 py-2 rounded-full shadow">BasicEd</button>
+
+            <button @click="filter='staff'" :class="btnClass('staff')"
+                class="px-4 py-2 rounded-full shadow">Staff</button>
+
+        </div>
+
+        <!-- STAFF GRID -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+            <template x-for="p in staff" :key="p.id">
+
+                <div x-show="filter === 'all' || filter === p.category"
+                     x-transition
+                     class="bg-white rounded-2xl shadow p-6 text-center hover:shadow-lg transition">
+
+                    <!-- IMAGE -->
+                    <div class="w-24 h-24 mx-auto rounded-full overflow-hidden border-4 border-gray-300">
+                        <img :src="p.img" class="w-full h-full object-cover">
+                    </div>
+
+                    <!-- NAME -->
+                    <h3 class="mt-4 font-semibold text-gray-800" x-text="p.name"></h3>
+
+                    <!-- ROLE -->
+                    <p class="text-sm text-gray-500" x-text="p.role"></p>
+
+                    <!-- VIEW PROFILE -->
+                    {{-- <button @click="openProfile(p)"
+                            class="mt-3 text-sm text-blue-600 hover:underline">
+                        View Profile
+                    </button> --}}
+
+                </div>
+
+            </template>
+
+        </div>
+
+    </div>
+
+    <!-- ================= MODAL ================= -->
+    <div x-show="open" x-transition
+         class="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
+
+        <div @click.away="open = false"
+             class="bg-white rounded-2xl shadow-xl max-w-lg w-full p-6 relative">
+
+            <!-- CLOSE -->
+            <button @click="open = false"
+                    class="absolute top-3 right-3 text-gray-500 hover:text-black text-xl">
+                ✕
+            </button>
+
+            <!-- PROFILE -->
+            <div class="text-center">
+
+                <div class="w-28 h-28 mx-auto rounded-full overflow-hidden border-4 border-blue-900 mb-4">
+                    <img :src="selected.img" class="w-full h-full object-cover">
+                </div>
+
+                <h2 class="text-xl font-bold text-gray-800" x-text="selected.name"></h2>
+                <p class="text-sm text-gray-500 mb-4" x-text="selected.role"></p>
+
+                <p class="text-sm text-gray-600">
+                    <span class="font-semibold">About:</span><br>
+                    Dedicated servant leader committed to ministry, teaching, and spiritual formation.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
 </section>
 
+<!-- ================= ALPINE SCRIPT ================= -->
+<script>
+function staffComponent() {
+    return {
+        filter: 'adco',
+        open: false,
+        selected: {},
+
+        staff: [
+            {id: 1, name: 'Leo Mahandlud', role: 'OIC President', category: 'adco', img: '/images/adco/leo.jpg'},
+            {id: 2, name: 'Maricris Dogeno', role: 'Business Manager', category: 'adco', img: '/images/adco/maricris.jfif'},
+            {id: 3, name: 'Verlie Amistoso', role: 'Teacher Grade 8 Adviser', category: 'basiced', img: '/images/basiced/verlie.jfif'},
+            {id: 4, name: 'Marilou A. Babao', role: 'Interim Principal', category: 'adco', img: '/images/temporary.jpg'},
+            {id: 5, name: 'Jeanica B. Barjona', role: 'Registrar', category: 'adco', img: '/images/adco/barjona.jfif'},
+            {id: 6, name: 'Josefin M. Anoos', role: 'DOSA', category: 'adco', img: '/images/temporary.jpg'},
+            {id: 7, name: 'Lionel Saquilabon', role: 'College Faculty', category: 'college', img: '/images/temporary.jpg'},
+            {id: 8, name: 'Evan Rey T. Macasa', role: 'Chaplain / College Faculty', category: 'college', img: '/images/temporary.jpg'},
+            {id: 9, name: 'Sophia Alder L. Samson', role: ' Guidance Advocate', category: 'staff', img: '/images/temporary.jpg'},
+            {id: 10, name: 'Nathalie Cabalda', role: ' Bookkeeper', category: 'staff', img: '/images/temporary.jpg'},
+            {id: 11, name: 'Marie Ruth V. Pastor', role: ' Cashier', category: 'staff', img: '/images/temporary.jpg'},
+            {id: 12, name: 'David Lloyd B. Open', role: ' Custodian', category: 'staff', img: '/images/temporary.jpg'},
+            {id: 13, name: 'Fernando Magos', role: ' Maintenance', category: 'staff', img: '/images/temporary.jpg'},
+            {id: 14, name: 'Nerhez C. Sanchez', role: ' College Faculty', category: 'college', img: '/images/temporary.jpg'},
+            {id: 15, name: 'Montanier Corvera', role: ' Maintenance', category: 'staff', img: '/images/temporary.jpg'},
+            {id: 16, name: 'Montanier Corvera', role: ' Maintenance', category: 'staff', img: '/images/temporary.jpg'},
+            {id: 17, name: 'Josephine J. Agustine ', role: ' Preschool Teacher', category: 'basiced', img: '/images/basiced/josephine.jfif'},
+           
+            {id: 18, name: 'Amy Jo C. Rojo ', role: ' Librarian', category: 'staff', img: '/images/temporary.jpg'},
+            {id: 19, name: 'Jannine Grace L. Reyes  ', role: ' Teacher Grade 1 Adviser', category: 'basiced', img: '/images/temporary.jpg'},
+            {id: 20, name: 'Bea A. Mantuahc  ', role: ' Teacher Grade 2 Adviser', category: 'basiced', img: '/images/temporary.jpg'},
+            {id: 21, name: 'Christine Anne F. De Los Santos ', role: ' Teacher Grade 3 Adviser', category: 'basiced', img: '/images/basiced/christine.jfif'},
+            {id: 22, name: 'Darien Y. Borromeo ', role: ' Teacher Grade 4 Adviser', category: 'basiced', img: '/images/temporary.jpg'},
+            {id: 23, name: 'Rezzie Mae I. Paulo ', role: ' Teacher Grade 5 Adviser', category: 'basiced', img: '/images/temporary.jpg'},
+            {id: 24, name: 'Julie B. Presbitero ', role: ' Teacher Grade 6 Adviser', category: 'basiced', img: '/images/temporary.jpg'},
+            {id: 25, name: 'Sheen Gapo', role: ' Teacher Grade 7 Adviser', category: 'basiced', img: '/images/temporary.jpg'},
+            {id: 26, name: 'Neil Joseph Alicabo', role: ' Teacher Grade 9 Adviser', category: 'basiced', img: '/images/temporary.jpg'},
+            {id: 27, name: 'Meridisa M. Canonigo', role: ' Teacher Grade 10 Adviser', category: 'basiced', img: '/images/temporary.jpg'},
+            {id: 28, name: 'Larry Babao', role: ' High School Coordinator / AP Teacher', category: 'basiced', img: '/images/temporary.jpg'},
+            {id: 29, name: 'John Quichon', role: ' IT - Coordinator / Computer Teacher', category: 'staff', img: '/images/temporary.jpg'},
+            {id: 30, name: 'Raquel D. Quichon', role: ' Computer Teacher', category: 'basiced', img: '/images/temporary.jpg'},
+            {id: 31, name: 'Josefin M. Anoos', role: 'College Faculty', category: 'college', img: '/images/temporary.jpg'},
+        ],
+
+        openProfile(person) {
+            this.selected = person;
+            this.open = true;
+        },
+
+        btnClass(type) {
+            return this.filter === type
+                ? 'bg-blue-600 text-white'
+                : 'bg-white text-gray-700';
+        }
+    }
+}
+</script>
 </x-app>

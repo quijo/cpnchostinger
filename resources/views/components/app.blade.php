@@ -7,17 +7,23 @@
     <link rel="icon" sizes="32x32" href="{{ asset('favicon.ico') }}">
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-    
-</head>
-<body>
-    <x-nav></x-nav>
-    
-    {{$slot}}
 
 
 
+<!-- AOS CSS -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    });
+</script>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
     <script>
@@ -29,6 +35,15 @@
         document.getElementById("yearsCount").innerText = years + "+";
     });
 </script>
+    
+</head>
+<body>
+    <x-nav></x-nav>
+    
+    {{$slot}}
+
+
+
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   const cards = document.querySelectorAll(".promo-card");
