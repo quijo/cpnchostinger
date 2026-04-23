@@ -279,7 +279,7 @@
 
     {{-- TITLE HEADER DIVISION --}}
        <div class="w-full text-center shadow-sm mb-10 mt-10 bg-white p-10 text-3xl">
-            <h1>Ministery Courses</h1>
+            <h1>Ministry Courses</h1>
        </div>
 
     {{-- ROWS  --}}
