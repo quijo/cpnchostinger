@@ -397,7 +397,7 @@
             <div x-data="{ open: false }" class="bg-white rounded-2xl shadow p-6 cursor-pointer">
                 <div @click="open = !open">
                     <h2 class="text-lg font-semibold text-green-600">
-                       Evangelism and Dicipleship
+                       Evangelism and Discipleship
                     </h2>
                     <p class="text-sm text-gray-500">
                         Course Code: IS10
@@ -463,14 +463,6 @@
                     </p>
                 </div>
             </div>
-
-
-
-
-
-
-
-
 
 
     </div>
