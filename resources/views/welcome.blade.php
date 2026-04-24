@@ -511,7 +511,7 @@ function staffComponent() {
 
         staff: [
             {id: 1, name: 'Leo J. Mahanlud', role: 'OIC President', category: 'adco', img: '/images/adco/leo.jfif'},
-            {id: 2, name: 'Rovelyn Villotes', role: 'Pre-Kinder Adviser', category: 'basiced', img: '/images/basiced/rovelyn.jfif'},
+            {id: 2, name: 'Rovelyn Y. Villotes', role: 'Pre-Kinder Adviser', category: 'basiced', img: '/images/basiced/rovelyn.jfif'},
             {id: 3, name: 'Maricris B. Dogeno', role: 'Business Manager', category: 'adco', img: '/images/adco/maricris.jfif'},
             {id: 4, name: 'Josephine J. Agustine', role: 'Preschool Teacher', category: 'basiced', img: '/images/basiced/josephine.jfif'},
             // {id: 5, name: 'Josephine J. Agustine', role: 'Preschool Teacher', category: 'basiced', img: '/images/basiced/josephine.jfif'},
@@ -529,11 +529,11 @@ function staffComponent() {
             {id: 17, name: 'Montanier Corvera', role: ' Maintenance', category: 'staff', img: '/images/temporary.jpg'},
             {id: 19, name: 'Amy Jo C. Rojo ', role: ' Librarian', category: 'staff', img: '/images/temporary.jpg'},
             {id: 20, name: 'Jannine Grace L. Reyes  ', role: ' Teacher Grade 1 Adviser', category: 'basiced', img: '/images/basiced/janine.jfif'},
-            {id: 21, name: 'Bea A. Mantuahc  ', role: ' Teacher Grade 2 Adviser', category: 'basiced', img: '/images/basiced/bea.jfif'},
+            {id: 21, name: 'Bea A. Mantuhac  ', role: ' Teacher Grade 2 Adviser', category: 'basiced', img: '/images/basiced/bea.jfif'},
             {id: 22, name: 'Christine Anne F. De Los Santos ', role: ' Teacher Grade 3 Adviser', category: 'basiced', img: '/images/basiced/delos_santos.jfif'},
             {id: 23, name: 'Darien Y. Borromeo ', role: ' Teacher Grade 4 Adviser', category: 'basiced', img: '/images/basiced/darien.jfif'},
-            {id: 24, name: 'Rezzie Mae I. Paulo ', role: ' Teacher Grade 5 Adviser / Elementary Coordinator', category: 'basiced', img: '/images/temporary.jpg'},
-            {id: 25, name: 'Julie B. Presbitero ', role: ' Teacher Grade 6 Adviser', category: 'basiced', img: '/images/temporary.jpg'},
+            {id: 24, name: 'Rezzie Mae I. Paulo ', role: ' Teacher Grade 5 Adviser', category: 'basiced', img: '/images/temporary.jpg'},
+            {id: 25, name: 'Julie B. Presbitero ', role: ' Teacher Grade 6 Adviser/ Elementary Coordinator', category: 'basiced', img: '/images/temporary.jpg'},
             {id: 26, name: 'Sheen Gapo', role: ' Teacher Grade 7 Adviser', category: 'basiced', img: '/images/temporary.jpg'},
             {id: 18, name: 'Verlie R. Amistoso', role: ' Grade 8 Adviser', category: 'basiced', img: '/images/basiced/verlie.jfif'},
             {id: 27, name: 'Neil Joseph A. Alicabo', role: ' Teacher Grade 9 Adviser / Sports Coordinator', category: 'basiced', img: '/images/basiced/niel.jfif'},
