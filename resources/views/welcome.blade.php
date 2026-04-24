@@ -24,7 +24,7 @@
             </h1>
 
             <p class="mt-4 text-sm md:text-lg">
-                Equipping students with faith, excellence, and service for the future.
+                Mentoring Transformational Leaders.
             </p>
 
             <div class="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
@@ -405,7 +405,7 @@ Faith-Based Education:</h3>
 
         <!-- HEADER -->
         <div class="text-center mb-10">
-            <h1 class="text-4xl font-bold text-blue-900">Our People</h1>
+            <h1 class="text-4xl font-bold text-black">Our People</h1>
             <p class="text-gray-600 mt-3">
                 Meet the dedicated staff of Central Philippine Nazarene College
             </p>
@@ -468,18 +468,17 @@ Faith-Based Education:</h3>
     <!-- ================= MODAL ================= -->
     <div x-show="open" x-transition
          class="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
+         {{-- for future dev donot delete --}}
 
-        <div @click.away="open = false"
+        {{-- <div @click.away="open = false" --}}
              class="bg-white rounded-2xl shadow-xl max-w-lg w-full p-6 relative">
-
             <!-- CLOSE -->
-            <button @click="open = false"
+            {{-- <button @click="open = false"
                     class="absolute top-3 right-3 text-gray-500 hover:text-black text-xl">
                 ✕
-            </button>
-
+            </button> --}}
             <!-- PROFILE -->
-            <div class="text-center">
+            {{-- <div class="text-center">
 
                 <div class="w-28 h-28 mx-auto rounded-full overflow-hidden border-4 border-blue-900 mb-4">
                     <img :src="selected.img" class="w-full h-full object-cover">
@@ -491,9 +490,9 @@ Faith-Based Education:</h3>
                 <p class="text-sm text-gray-600">
                     <span class="font-semibold">About:</span><br>
                     Dedicated servant leader committed to ministry, teaching, and spiritual formation.
-                </p>
+                </p> --}}
 
-            </div>
+            {{-- </div> --}}
 
         </div>
 
@@ -510,24 +509,35 @@ function staffComponent() {
         selected: {},
 
         staff: [
+            // adco
             {id: 1, name: 'Leo J. Mahanlud', role: 'OIC President', category: 'adco', img: '/images/adco/leo.jfif'},
-            {id: 2, name: 'Rovelyn Y. Villotes', role: 'Pre-Kinder Adviser', category: 'basiced', img: '/images/basiced/rovelyn.jfif'},
             {id: 3, name: 'Maricris B. Dogeno', role: 'Business Manager', category: 'adco', img: '/images/adco/maricris.jfif'},
-            {id: 4, name: 'Josephine J. Agustine', role: 'Preschool Teacher', category: 'basiced', img: '/images/basiced/josephine.jfif'},
-            // {id: 5, name: 'Josephine J. Agustine', role: 'Preschool Teacher', category: 'basiced', img: '/images/basiced/josephine.jfif'},
             {id: 6, name: 'Marilou A. Babao', role: 'Interim Principal', category: 'adco', img: '/images/basiced/malou.jfif'},
             {id: 7, name: 'Jeanica B. Barjona', role: 'Registrar', category: 'adco', img: '/images/adco/barjona.jfif'},
             {id: 8, name: 'Josefin M. Anoos', role: 'DOSA', category: 'adco', img: '/images/adco/jo.jfif'},
+           
+
+            //college
             {id: 9, name: 'Lionel G. Saquilabon', role: 'College Faculty', category: 'college', img: '/images/college/lionel.jfif'},
             {id: 10, name: 'Evan Rey T. Macasa', role: 'Chaplain / College Faculty', category: 'college', img: '/images/college/evanrey.jpg'},
+            {id: 16, name: 'Nerhez C. Sanchez', role: ' College Faculty', category: 'college', img: '/images/college/nerez.jfif'},
+             {id: 32, name: 'Josefin M. Anoos', role: 'College Faculty', category: 'college', img: '/images/adco/jo.jfif'},
+
+            // {id: 5, name: 'Josephine J. Agustine', role: 'Preschool Teacher', category: 'basiced', img: '/images/basiced/josephine.jfif'},
+           
+           //staff
             {id: 11, name: 'Sophia Alder L. Samson', role: ' Guidance Advocate', category: 'staff', img: '/images/staff/sophia.jfif'},
             {id: 12, name: 'Nathalie Cabalda', role: ' Bookkeeper', category: 'staff', img: '/images/staff/n_cabalda.jpg'},
             {id: 13, name: 'Marie Ruth V. Pastor', role: ' Cashier', category: 'staff', img: '/images/staff/r_pastor.jpg'},
+            {id: 19, name: 'Amy Jo C. Rojo ', role: ' Librarian', category: 'staff', img: '/images/staff/amyjo.jpg'},
             {id: 14, name: 'David Lloyd B. Open', role: ' Custodian', category: 'staff', img: '/images/staff/d_open.jpg'},
             {id: 15, name: 'Fernando Magos', role: ' Maintenance', category: 'staff', img: '/images/staff/f_magos.jpg'},
-            {id: 16, name: 'Nerhez C. Sanchez', role: ' College Faculty', category: 'college', img: '/images/college/nerez.jfif'},
             {id: 17, name: 'Montanier Corvera', role: ' Maintenance', category: 'staff', img: '/images/staff/m_corvera.jpg'},
-            {id: 19, name: 'Amy Jo C. Rojo ', role: ' Librarian', category: 'staff', img: '/images/staff/amyjo.jpg'},
+            {id: 30, name: 'John Quiachon', role: ' IT - Coordinator / Computer Teacher', category: 'staff', img: '/images/staff/john.jpg'},
+
+            //basiced
+            {id: 4, name: 'Josephine J. Agustine', role: 'Preschool Teacher', category: 'basiced', img: '/images/basiced/josephine.jfif'},
+            {id: 2, name: 'Rovelyn Y. Villotes', role: 'Pre-Kinder Adviser', category: 'basiced', img: '/images/basiced/rovelyn.jfif'},
             {id: 20, name: 'Jannine Grace L. Reyes  ', role: ' Teacher Grade 1 Adviser', category: 'basiced', img: '/images/basiced/janine.jfif'},
             {id: 21, name: 'Bea A. Mantuhac  ', role: ' Teacher Grade 2 Adviser', category: 'basiced', img: '/images/basiced/bea.jfif'},
             {id: 22, name: 'Christine Anne F. De Los Santos ', role: ' Teacher Grade 3 Adviser', category: 'basiced', img: '/images/basiced/delos_santos.jfif'},
@@ -539,15 +549,12 @@ function staffComponent() {
             {id: 27, name: 'Neil Joseph A. Alicabo', role: ' Teacher Grade 9 Adviser / Sports Coordinator', category: 'basiced', img: '/images/basiced/niel.jfif'},
             {id: 28, name: 'Meridisa M. Canonigo', role: ' Teacher Grade 10 Adviser', category: 'basiced', img: '/images/basiced/canonigo.jpg'},
             {id: 29, name: 'Larry D. Babao', role: ' High School Coordinator / AP Teacher', category: 'basiced', img: '/images/basiced/l_babao.jpg'},
-            {id: 30, name: 'John Quiachon', role: ' IT - Coordinator / Computer Teacher', category: 'staff', img: '/images/staff/john.jpg'},
             {id: 31, name: 'Raquel D. Quiachon', role: ' Computer Teacher', category: 'basiced', img: '/images/basiced/raquel.jfif'},
-            {id: 32, name: 'Josefin M. Anoos', role: 'College Faculty', category: 'college', img: '/images/adco/jo.jfif'},
-         
         ],
 
         openProfile(person) {
             this.selected = person;
-            this.open = true;
+            this.open = false;
         },
 
         btnClass(type) {
