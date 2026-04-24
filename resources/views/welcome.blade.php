@@ -535,7 +535,7 @@ function staffComponent() {
             {id: 24, name: 'Rezzie Mae I. Paulo ', role: ' Teacher Grade 5 Adviser', category: 'basiced', img: '/images/temporary.jpg'},
             {id: 25, name: 'Julie B. Presbitero ', role: ' Teacher Grade 6 Adviser/ Elementary Coordinator', category: 'basiced', img: '/images/temporary.jpg'},
             {id: 26, name: 'Sheen Gapo', role: ' Teacher Grade 7 Adviser', category: 'basiced', img: '/images/temporary.jpg'},
-            {id: 18, name: 'Verlie R. Amistoso', role: ' Grade 8 Adviser', category: 'basiced', img: '/images/basiced/verlie.jfif'},
+            {id: 18, name: 'Verlie R. Amistoso', role: ' Grade 8 Adviser / BGB Coordinator', category: 'basiced', img: '/images/basiced/verlie.jfif'},
             {id: 27, name: 'Neil Joseph A. Alicabo', role: ' Teacher Grade 9 Adviser / Sports Coordinator', category: 'basiced', img: '/images/basiced/niel.jfif'},
             {id: 28, name: 'Meridisa M. Canonigo', role: ' Teacher Grade 10 Adviser', category: 'basiced', img: '/images/temporary.jpg'},
             {id: 29, name: 'Larry D. Babao', role: ' High School Coordinator / AP Teacher', category: 'basiced', img: '/images/temporary.jpg'},
