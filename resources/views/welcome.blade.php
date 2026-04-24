@@ -535,10 +535,10 @@ function staffComponent() {
             {id: 23, name: 'Julie B. Presbitero ', role: ' Teacher Grade 6 Adviser', category: 'basiced', img: '/images/temporary.jpg'},
             {id: 24, name: 'Sheen Gapo', role: ' Teacher Grade 7 Adviser', category: 'basiced', img: '/images/temporary.jpg'},
             {id: 25, name: 'Neil Joseph A. Alicabo', role: ' Teacher Grade 9 Adviser / Sports Coordinator', category: 'basiced', img: '/images/temporary.jpg'},
-            // {id: 26, name: 'Meridisa M. Canonigo', role: ' Teacher Grade 10 Adviser', category: 'basiced', img: '/images/temporary.jpg'},
+            {id: 26, name: 'Meridisa M. Canonigo', role: ' Teacher Grade 10 Adviser', category: 'basiced', img: '/images/temporary.jpg'},
             {id: 27, name: 'Larry D. Babao', role: ' High School Coordinator / AP Teacher', category: 'basiced', img: '/images/temporary.jpg'},
             {id: 28, name: 'John Quiachon', role: ' IT - Coordinator / Computer Teacher', category: 'staff', img: '/images/temporary.jpg'},
-            {id: 29, name: 'Raquel D. Quichon', role: ' Computer Teacher', category: 'basiced', img: '/images/basiced/raquel.jfif'},
+            {id: 29, name: 'Raquel D. Quiachon', role: ' Computer Teacher', category: 'basiced', img: '/images/basiced/raquel.jfif'},
             {id: 30, name: 'Josefin M. Anoos', role: 'College Faculty', category: 'college', img: '/images/temporary.jpg'},
            
         ],
