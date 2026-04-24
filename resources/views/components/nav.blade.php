@@ -155,7 +155,7 @@
 
         <a href="/admissions" class="block py-2 hover:text-blue-900 transition">Admissions</a>
         <a href="academics" class="block py-2 hover:text-blue-900 transition">Academics</a>
-        <a href="https://vnbc-gnec.kari.opalsinfo.net/bin/omf#/login/vnbc-gnec.kari.opalsinfo.net" target="_blank" class="block py-2 hover:text-blue-900 transition">Library</a>
+        <a href="https://vnbc-gnec.kari.opalsinfo.net/bin/omf#/portal/0" target="_blank" class="block py-2 hover:text-blue-900 transition">Library</a>
         <a href="https://cpnc.globalnaz.com" class="block py-2 hover:text-blue-900 transition" target="_blank">GNECsis</a>
        
          
