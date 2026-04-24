@@ -323,7 +323,7 @@ Faith-Based Education:</h3>
         </div>
       </div>
 
-      <!-- Card -->
+      <!-- Card COLLEGE to be edited later-->
       {{-- <div class="promo-card opacity-0 translate-y-10 transition-all duration-700 relative rounded-2xl overflow-hidden shadow-lg group hover:-translate-y-2 hover:shadow-2xl">
         <img src="/images/college/college.jpg" alt="College" class="w-full h-[420px] object-contain bg-blue-950">
         <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
@@ -521,7 +521,7 @@ function staffComponent() {
             {id: 9, name: 'Lionel G. Saquilabon', role: 'College Faculty', category: 'college', img: '/images/college/lionel.jfif'},
             {id: 10, name: 'Evan Rey T. Macasa', role: 'Chaplain / College Faculty', category: 'college', img: '/images/college/evanrey.jpg'},
             {id: 16, name: 'Nerhez C. Sanchez', role: ' College Faculty', category: 'college', img: '/images/college/nerez.jfif'},
-             {id: 32, name: 'Josefin M. Anoos', role: 'College Faculty', category: 'college', img: '/images/adco/jo.jfif'},
+            {id: 32, name: 'Josefin M. Anoos', role: 'College Faculty', category: 'college', img: '/images/adco/jo.jfif'},
 
             // {id: 5, name: 'Josephine J. Agustine', role: 'Preschool Teacher', category: 'basiced', img: '/images/basiced/josephine.jfif'},
            
