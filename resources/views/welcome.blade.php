@@ -510,7 +510,7 @@ function staffComponent() {
         selected: {},
 
         staff: [
-            {id: 1, name: 'Leo J. Mahandlud', role: 'OIC President', category: 'adco', img: '/images/adco/leo.jfif'},
+            {id: 1, name: 'Leo J. Mahanlud', role: 'OIC President', category: 'adco', img: '/images/adco/leo.jfif'},
             {id: 2, name: 'Maricris B. Dogeno', role: 'Business Manager', category: 'adco', img: '/images/adco/maricris.jfif'},
             {id: 3, name: 'Verlie R. Amistoso', role: 'Teacher Grade 8 Adviser', category: 'basiced', img: '/images/basiced/verlie.jfif'},
             {id: 4, name: 'Marilou A. Babao', role: 'Interim Principal', category: 'adco', img: '/images/basiced/malou.jfif'},
