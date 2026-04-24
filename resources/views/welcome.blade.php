@@ -515,7 +515,7 @@ function staffComponent() {
             {id: 3, name: 'Verlie R. Amistoso', role: 'Teacher Grade 8 Adviser', category: 'basiced', img: '/images/basiced/verlie.jfif'},
             {id: 4, name: 'Marilou A. Babao', role: 'Interim Principal', category: 'adco', img: '/images/basiced/malou.jfif'},
             {id: 5, name: 'Jeanica B. Barjona', role: 'Registrar', category: 'adco', img: '/images/adco/barjona.jfif'},
-            {id: 6, name: 'Josefin M. Anoos', role: 'DOSA', category: 'adco', img: '/images/temporary.jpg'},
+            {id: 6, name: 'Josefin M. Anoos', role: 'DOSA', category: 'adco', img: '/images/adco/jo.jfif'},
             {id: 7, name: 'Lionel G. Saquilabon', role: 'College Faculty', category: 'college', img: '/images/temporary.jpg'},
             {id: 8, name: 'Evan Rey T. Macasa', role: 'Chaplain / College Faculty', category: 'college', img: '/images/temporary.jpg'},
             {id: 9, name: 'Sophia Alder L. Samson', role: ' Guidance Advocate', category: 'staff', img: '/images/temporary.jpg'},
