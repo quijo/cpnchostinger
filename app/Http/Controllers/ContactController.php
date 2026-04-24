@@ -18,8 +18,8 @@ class ContactController extends Controller
         Mail::raw(
             "Name: {$request->name}\nEmail: {$request->email}\n\nMessage:\n{$request->message}",
             function ($mail) {
-                $mail->to('jquiachon@cpnc.edu.ph')
-                     ->subject('New Contact Message');
+                $mail->to('rdquiachon@cpnc.edu.ph')
+                     ->subject('New Message from the Website');
             }
         );
 
