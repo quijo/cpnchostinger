@@ -510,7 +510,7 @@ function staffComponent() {
         selected: {},
 
         staff: [
-            {id: 1, name: 'Leo J. Mahandlud', role: 'OIC President', category: 'adco', img: '/images/adco/leo.jpg'},
+            {id: 1, name: 'Leo J. Mahandlud', role: 'OIC President', category: 'adco', img: '/images/adco/leo.jfif'},
             {id: 2, name: 'Maricris B. Dogeno', role: 'Business Manager', category: 'adco', img: '/images/adco/maricris.jfif'},
             {id: 3, name: 'Verlie R. Amistoso', role: 'Teacher Grade 8 Adviser', category: 'basiced', img: '/images/basiced/verlie.jfif'},
             {id: 4, name: 'Marilou A. Babao', role: 'Interim Principal', category: 'adco', img: '/images/basiced/malou.jfif'},
@@ -526,9 +526,8 @@ function staffComponent() {
             {id: 14, name: 'Nerhez C. Sanchez', role: ' College Faculty', category: 'college', img: '/images/temporary.jpg'},
             {id: 15, name: 'Montanier Corvera', role: ' Maintenance', category: 'staff', img: '/images/temporary.jpg'},
             {id: 16, name: 'Josephine J. Agustine ', role: ' Preschool Teacher', category: 'basiced', img: '/images/basiced/josephine.jfif'},
-        
             {id: 17, name: 'Amy Jo C. Rojo ', role: ' Librarian', category: 'staff', img: '/images/temporary.jpg'},
-            {id: 18, name: 'Jannine Grace L. Reyes  ', role: ' Teacher Grade 1 Adviser', category: 'basiced', img: '/images/temporary.jpg'},
+            {id: 18, name: 'Jannine Grace L. Reyes  ', role: ' Teacher Grade 1 Adviser', category: 'basiced', img: '/images/basiced/janine.jfif'},
             {id: 19, name: 'Bea A. Mantuahc  ', role: ' Teacher Grade 2 Adviser', category: 'basiced', img: '/images/basiced/bea.jfif'},
             {id: 20, name: 'Christine Anne F. De Los Santos ', role: ' Teacher Grade 3 Adviser', category: 'basiced', img: '/images/basiced/christine.jfif'},
             {id: 21, name: 'Darien Y. Borromeo ', role: ' Teacher Grade 4 Adviser', category: 'basiced', img: '/images/basiced/darien.jfif'},
