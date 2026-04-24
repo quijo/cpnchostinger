@@ -339,64 +339,7 @@ Faith-Based Education:</h3>
 </section>
 
 
-{{-- ----- --}}
-{{-- STAFF --}}
-{{-- ----- --}}
 
-{{-- <section class="bg-gray-50 py-16 px-6 lg:px-20">
-    <div class="max-w-6xl mx-auto">
-
-        <!-- Header -->
-        <div class="text-center mb-12">
-            <h1 class="text-4xl font-bold text-blue-900">Our Staff</h1>
-            <p class="text-gray-600 mt-3">
-                Meet the dedicated people behind Central Philippine Nazarene College
-            </p>
-        </div>
-
-        <!-- Staff Grid -->
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
-
-            <!-- Staff Card -->
-            <div class="flex flex-col items-center text-center">
-                <div class="w-32 h-32 rounded-full overflow-hidden shadow-lg border-4 border-blue-900">
-                    <img src="/images/staff1.jpg" class="w-full h-full object-cover" alt="Staff">
-                </div>
-                <h3 class="mt-4 text-lg font-semibold text-gray-800">John Doe</h3>
-                <p class="text-sm text-gray-500">Principal</p>
-            </div>
-
-            <!-- Staff Card -->
-            <div class="flex flex-col items-center text-center">
-                <div class="w-32 h-32 rounded-full overflow-hidden shadow-lg border-4 border-blue-900">
-                    <img src="/images/staff2.jpg" class="w-full h-full object-cover" alt="Staff">
-                </div>
-                <h3 class="mt-4 text-lg font-semibold text-gray-800">Maria Santos</h3>
-                <p class="text-sm text-gray-500">Registrar</p>
-            </div>
-
-            <!-- Staff Card -->
-            <div class="flex flex-col items-center text-center">
-                <div class="w-32 h-32 rounded-full overflow-hidden shadow-lg border-4 border-blue-900">
-                    <img src="/images/staff3.jpg" class="w-full h-full object-cover" alt="Staff">
-                </div>
-                <h3 class="mt-4 text-lg font-semibold text-gray-800">Peter Cruz</h3>
-                <p class="text-sm text-gray-500">IT Coordinator</p>
-            </div>
-
-            <!-- Staff Card -->
-            <div class="flex flex-col items-center text-center">
-                <div class="w-32 h-32 rounded-full overflow-hidden shadow-lg border-4 border-blue-900">
-                    <img src="/images/staff4.jpg" class="w-full h-full object-cover" alt="Staff">
-                </div>
-                <h3 class="mt-4 text-lg font-semibold text-gray-800">Anna Reyes</h3>
-                <p class="text-sm text-gray-500">Finance Officer</p>
-            </div>
-
-        </div>
-
-    </div>
-</section> --}}
 
 
 <section class="bg-gray-50 py-16 px-6 lg:px-20" x-data="staffComponent()">
@@ -466,7 +409,7 @@ Faith-Based Education:</h3>
     </div>
 
     <!-- ================= MODAL ================= -->
-    <div x-show="open" x-transition
+    {{-- <div x-show="open" x-transition
          class="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
 
         <div @click.away="open = false"
@@ -497,7 +440,7 @@ Faith-Based Education:</h3>
 
         </div>
 
-    </div>
+    </div> --}}
 
 </section>
 
