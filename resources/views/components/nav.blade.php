@@ -178,7 +178,7 @@
                 <a href="/history" class="block hover:text-blue-900 transition">CPNC History</a>
                 <a href="/mission" class="block hover:text-blue-900 transition">Mission</a>
                 <a href="/program" class="block hover:text-blue-900 transition">Program</a>
-                <a href="/course" class="block hover:text-blue-900 transition">Course</a>
+                <a href="/course" class="block hover:text-blue-900 transition">Courses</a>
                 <a href="/instructor" class="block hover:text-blue-900 transition">instructor</a>
                 <a href="/licensing" class="block hover:text-blue-900 transition">Licensing and Ordination</a>
                 <a href="/dbm" class="block hover:text-blue-900 transition">The District Board of Ministry</a>
