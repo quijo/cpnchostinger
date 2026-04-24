@@ -75,7 +75,7 @@
                 <a href="academics" class="hover:text-blue-900 transition">Academics</a>
 
 
-                <a href="https://vnbc-gnec.kari.opalsinfo.net/bin/omf#/login/vnbc-gnec.kari.opalsinfo.net" target="_blank"> Library</a>
+                <a href="https://vnbc-gnec.kari.opalsinfo.net/bin/omf#/portal/0" target="_blank"> Library</a>
                 <a href="https://cpnc.globalnaz.com" target="_blank">GNECsis</a>
 
 
