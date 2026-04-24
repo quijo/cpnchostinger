@@ -540,7 +540,7 @@ function staffComponent() {
             {id: 28, name: 'John Quiachon', role: ' IT - Coordinator / Computer Teacher', category: 'staff', img: '/images/temporary.jpg'},
             {id: 29, name: 'Raquel D. Quiachon', role: ' Computer Teacher', category: 'basiced', img: '/images/basiced/raquel.jfif'},
             {id: 30, name: 'Josefin M. Anoos', role: 'College Faculty', category: 'college', img: '/images/adco/jo.jfif'},
-            {id: 30, name: 'Rovelyn Villotes', role: 'Pre-Kinder Adviser', category: 'basiced', img: '/images/adco/jo.jfif'},
+            {id: 31, name: 'Rovelyn Villotes', role: 'Pre-Kinder Adviser', category: 'basiced', img: '/images/adco/jo.jfif'},
            
         ],
 
