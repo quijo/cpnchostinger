@@ -471,7 +471,7 @@ Faith-Based Education:</h3>
          {{-- for future dev donot delete --}}
 
         {{-- <div @click.away="open = false" --}}
-             class="bg-white rounded-2xl shadow-xl max-w-lg w-full p-6 relative">
+            < class="bg-white rounded-2xl shadow-xl max-w-lg w-full p-6 relative">
             <!-- CLOSE -->
             {{-- <button @click="open = false"
                     class="absolute top-3 right-3 text-gray-500 hover:text-black text-xl">
