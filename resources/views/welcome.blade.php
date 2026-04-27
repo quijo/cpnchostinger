@@ -566,7 +566,7 @@ function staffComponent() {
             //college
             {id: 9, name: 'Lionel G. Saquilabon', role: 'College Faculty', category: 'college', img: '/images/college/lionel.jfif'},
             {id: 10, name: 'Evan Rey T. Macasa', role: 'Chaplain / College Faculty', category: 'college', img: '/images/college/evanrey.jpg'},
-            {id: 16, name: 'Nerhez C. Sanchez', role: ' College Faculty', category: 'college', img: '/images/college/nerez.jfif'},
+            {id: 16, name: 'Nerhez Sanchez-Costelo', role: ' College Faculty', category: 'college', img: '/images/college/nerez.jfif'},
             {id: 32, name: 'Josefin M. Anoos', role: 'College Faculty', category: 'college', img: '/images/adco/jo.jfif'},
 
             // {id: 5, name: 'Josephine J. Agustine', role: 'Preschool Teacher', category: 'basiced', img: '/images/basiced/josephine.jfif'},

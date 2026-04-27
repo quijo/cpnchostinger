@@ -26,7 +26,7 @@
                 </div>
 
                 <p class="text-gray-600 leading-relaxed">
-                   Mentoring every generation of transformational leaders through quality holistic educaiton adn exemplary Christ-centered life that infuence the church and the global community.
+                   Mentoring every generation of transformational leaders through quality holistic educaiton and exemplary Christ-centered life that infuence the church and the global community.
                 </p>
             </div>
 
