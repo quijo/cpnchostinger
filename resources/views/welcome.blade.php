@@ -505,41 +505,46 @@ Faith-Based Education:</h3>
 <!-- Announcement -->
 
 <!-- ANNOUNCEMENTS -->
-<div class="max-w-6xl mx-auto py-10 px-4">
+<section class="max-w-7xl mx-auto py-10 px-4 grid grid-cols-1 md:grid-cols-2 gap-6">
 
-    <h2 class="text-2xl font-bold mb-6">📢 Announcements</h2>
+    <!-- 📢 LEFT: ANNOUNCEMENTS -->
+    <div>
+        <h2 class="text-2xl font-bold mb-4">📢 Announcements</h2>
 
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="space-y-4">
+            @forelse($announcements as $announcement)
+                <div class="bg-white p-4 rounded shadow hover:shadow-md transition">
 
-        @forelse($announcements as $announcement)
-            <div class="bg-white rounded-lg shadow overflow-hidden">
-
-                @if($announcement->image)
-                    <img src="{{ asset('storage/' . $announcement->image) }}"
-                         class="h-40 w-full object-cover">
-                @endif
-
-                <div class="p-4">
                     <h3 class="font-bold text-lg">
                         {{ $announcement->title }}
                     </h3>
 
                     <p class="text-sm text-gray-600 mt-2">
-                        {{ Str::limit($announcement->content, 100) }}
+                        {{ Str::limit($announcement->content, 120) }}
                     </p>
 
-                    <div class="mt-3 text-xs text-gray-500">
+                    <p class="text-xs text-gray-400 mt-2">
                         {{ $announcement->published_at?->format('M d, Y') }}
-                    </div>
+                    </p>
+
                 </div>
-
-            </div>
-        @empty
-            <p class="text-gray-500">No announcements available.</p>
-        @endforelse
-
+            @empty
+                <p class="text-gray-500">No announcements available.</p>
+            @endforelse
+        </div>
     </div>
-</div>
+
+    <!-- 📅 RIGHT: CALENDAR / EVENTS -->
+    
+
+        <div>
+            <h2 class="text-2xl font-bold mb-4">📅 Calendar</h2>
+
+            <div id="calendar"></div>
+        </div>
+    </div>
+
+</section>
 
 <!-- ================= ALPINE SCRIPT ================= -->
 <script>
@@ -606,4 +611,39 @@ function staffComponent() {
     }
 }
 </script>
+
+
+<!-- Callendar -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+
+    const calendarEl = document.getElementById('calendar');
+
+    if (!calendarEl) return;
+
+    const calendar = new FullCalendar.Calendar(calendarEl, {
+
+        initialView: 'dayGridMonth',
+
+        headerToolbar: {
+            left: 'prev,next today',
+            center: 'title',
+            right: 'dayGridMonth,timeGridWeek,timeGridDay,listYear'
+        },
+
+        views: {
+            listYear: {
+                type: 'listYear',
+                buttonText: 'Year'
+            }
+        },
+
+        events: @json($events)
+
+    });
+
+    calendar.render();
+});
+</script>
+
 </x-app>

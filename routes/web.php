@@ -33,9 +33,9 @@ Route::get('/licensing', fn() => view('pages.philmicteen.licensing'))->name('lic
 Route::get('/dbm', fn() => view('pages.philmicteen.dbm'))->name('dbm');
 
 
-//FILAMENT
-
+//FILAMENT a
 
 Route::get('/', [PagesController::class, 'welcome']);
+Route::get('/portal', [PagesController::class, 'portal']);
 
 Route::post('/contact', [ContactController::class, 'send'])->name('contact.send');
