@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\PageController;
+use App\Http\Controllers\PagesController;
 use App\Http\Controllers\ContactController;
 use App\Models\Announcement;
 
@@ -32,5 +32,10 @@ Route::get('/instructor', fn() => view('pages.philmicteen.instructor'))->name('i
 Route::get('/licensing', fn() => view('pages.philmicteen.licensing'))->name('licensing');
 Route::get('/dbm', fn() => view('pages.philmicteen.dbm'))->name('dbm');
 
+
+//FILAMENT
+
+
+Route::get('/', [PagesController::class, 'welcome']);
 
 Route::post('/contact', [ContactController::class, 'send'])->name('contact.send');
