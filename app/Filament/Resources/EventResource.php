@@ -6,7 +6,7 @@ use App\Filament\Resources\EventResource\Pages;
 use App\Filament\Resources\EventResource\RelationManagers;
 use App\Models\Event;
 use Filament\Forms;
-use Filament\Forms\Form;
+
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
@@ -19,56 +19,53 @@ use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\DateTimePicker;
 use Filament\Forms\Components\Toggle;
 
-
+use Filament\Schemas\Schema;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Columns\IconColumn;
+use BackedEnum;
 
 class EventResource extends Resource
 {
     protected static ?string $model = Event::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static string|BackedEnum|null $navigationIcon = 'heroicon-o-calendar';
 
-    public static function form(Form $form): Form
+    public static function form(Schema $schema): Schema
     {
-          return $form->schema([
-        TextInput::make('title')
-            ->required()
-            ->maxLength(255),
+        return $schema->schema([
+            \Filament\Forms\Components\TextInput::make('title')
+                ->required()
+                ->maxLength(255),
 
-        Textarea::make('description')
-            ->columnSpanFull(),
+            \Filament\Forms\Components\Textarea::make('description')
+                ->required()
+                ->columnSpanFull(),
 
-        DateTimePicker::make('start_date')
-            ->required(),
+            \Filament\Forms\Components\FileUpload::make('image')
+                ->image()
+                ->directory('events')
+                ->nullable(),
 
-        DateTimePicker::make('end_date'),
+            \Filament\Forms\Components\DateTimePicker::make('start_date'),
 
-        TextInput::make('location')
-            ->maxLength(255),
-
-        Toggle::make('is_all_day')
-            ->default(false),
-
-        Toggle::make('is_active')
-            ->default(true),
-    ]);
+            \Filament\Forms\Components\DateTimePicker::make('end_date'),
+        ]);
     }
 
     public static function table(Table $table): Table
     {
         return $table->columns([
-        TextColumn::make('title')
-            ->searchable(),
+            TextColumn::make('title')
+                ->searchable(),
 
-        TextColumn::make('start_date')
-            ->dateTime(),
+            TextColumn::make('start_date')
+                ->dateTime(),
 
-        TextColumn::make('location'),
+            TextColumn::make('location'),
 
-        IconColumn::make('is_active')
-            ->boolean(),
-    ]);
+            IconColumn::make('is_active')
+                ->boolean(),
+        ]);
     }
 
     public static function getRelations(): array
