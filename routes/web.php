@@ -19,7 +19,7 @@ Route::get('/admissions', fn() => view('pages.admissions'))->name('admissions');
 Route::get('/academics', fn() => view('pages.academics'))->name('academic');
 Route::get('/admission-process', fn() => view('pages.admission-process'))->name('admission-process');
 Route::get('/more-about-us', fn() => view('pages.learnmore-about-cpnc'))->name('more-about-us');
-// Route::get('/downloads', fn() => view('pages.download'))->name('downloads');
+
 Route::get('/downloads', fn() => view('pages.download'))->name('downloads');
 
 
@@ -33,9 +33,12 @@ Route::get('/licensing', fn() => view('pages.philmicteen.licensing'))->name('lic
 Route::get('/dbm', fn() => view('pages.philmicteen.dbm'))->name('dbm');
 
 
-//FILAMENT a
-
-Route::get('/', [PagesController::class, 'welcome']);
-Route::get('/portal', [PagesController::class, 'portal']);
-
 Route::post('/contact', [ContactController::class, 'send'])->name('contact.send');
+Route::get('/', [PagesController::class, 'welcome']);
+
+// Clickable annoucement
+Route::get('/announcements/{announcement}', function (Announcement $announcement) {
+    return view('announcements.show', compact('announcement'));
+})->name('announcements.show');
+
+

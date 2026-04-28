@@ -3,6 +3,8 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+//clickable announcement
+use Illuminate\Support\Str;
 
 class Announcement extends Model
 {
@@ -20,4 +22,9 @@ class Announcement extends Model
         'published_at' => 'datetime',
         'expires_at' => 'datetime',
     ];
+
+    // clicable announcement
+
+
+
 }

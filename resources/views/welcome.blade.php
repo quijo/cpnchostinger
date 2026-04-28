@@ -513,21 +513,21 @@ Faith-Based Education:</h3>
 
         <div class="space-y-4">
             @forelse($announcements as $announcement)
-                <div class="bg-white p-4 rounded shadow hover:shadow-md transition">
+                    <a href="{{ route('announcements.show', $announcement) }}"
+       class="block border p-4 mb-3 hover:bg-gray-50 rounded">
 
-                    <h3 class="font-bold text-lg">
-                        {{ $announcement->title }}
-                    </h3>
+        <h2 class="font-bold text-lg">
+            {{ $announcement->title }}
+        </h2>
 
-                    <p class="text-sm text-gray-600 mt-2">
-                        {{ Str::limit($announcement->content, 120) }}
-                    </p>
+        <p class="text-sm text-gray-600">
+            {{ \Illuminate\Support\Str::limit(strip_tags($announcement->content), 120) }}
+        </p>
 
-                    <p class="text-xs text-gray-400 mt-2">
-                        {{ $announcement->published_at?->format('M d, Y') }}
-                    </p>
-
-                </div>
+        <!-- <span class="text-blue-500 text-sm">
+            Read more →
+        </span> -->
+    </a>
             @empty
                 <p class="text-gray-500">No announcements available.</p>
             @endforelse

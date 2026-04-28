@@ -20,8 +20,13 @@ use Filament\Forms\Components\DateTimePicker;
 use BackedEnum;
 use Filament\Schemas\Schema;
 
+// clickable
 use Filament\Actions\EditAction;
 use Filament\Actions\DeleteBulkAction;
+
+use Filament\Tables\Actions\ViewAction;
+
+
 
 class AnnouncementResource extends Resource
 {
@@ -42,10 +47,10 @@ class AnnouncementResource extends Resource
                 ->required()
                 ->columnSpanFull(),
 
-            \Filament\Forms\Components\FileUpload::make('image')
-                ->image()
-                ->directory('announcements')
-                ->nullable(),
+           FileUpload::make('image')
+            ->image()
+            ->disk('public')
+            ->directory('announcements'),
 
             \Filament\Forms\Components\Toggle::make('is_active')
                 ->default(true),
@@ -68,6 +73,7 @@ class AnnouncementResource extends Resource
                 TextColumn::make('published_at')->dateTime(),
             ])
             ->actions([
+                
                 EditAction::make(),
             ])
             ->bulkActions([
@@ -86,6 +92,7 @@ class AnnouncementResource extends Resource
             'index' => Pages\ListAnnouncements::route('/'),
             'create' => Pages\CreateAnnouncement::route('/create'),
             'edit' => Pages\EditAnnouncement::route('/{record}/edit'),
+            'view' => Pages\ViewAnnouncement::route('/{record}'),
         ];
     }
 }
