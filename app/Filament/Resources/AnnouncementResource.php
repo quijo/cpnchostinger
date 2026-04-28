@@ -26,7 +26,7 @@ use Filament\Actions\DeleteBulkAction;
 
 use Filament\Tables\Actions\ViewAction;
 
-
+use Filament\Forms\Components\RichEditor;
 
 class AnnouncementResource extends Resource
 {
@@ -43,9 +43,9 @@ class AnnouncementResource extends Resource
                 ->required()
                 ->maxLength(255),
 
-            \Filament\Forms\Components\Textarea::make('content')
-                ->required()
-                ->columnSpanFull(),
+            RichEditor::make('content')
+    ->required()
+    ->columnSpanFull(),
 
            FileUpload::make('image')
             ->image()

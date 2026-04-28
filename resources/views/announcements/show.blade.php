@@ -20,13 +20,14 @@
             </div>
 
             {{-- RIGHT: CONTENT --}}
-            <div class="space-y-4">
+<div class="text-gray-700 leading-relaxed
+            [&_ul]:list-disc
+            [&_ul]:pl-6
+            [&_li]:list-disc
+            [&_li]:ml-4">
 
-                <div class="text-gray-700 leading-relaxed">
-                    {!! $announcement->content !!}
-                </div>
-
-            </div>
+    {!! $announcement->content !!}
+</div>
 
         </div>
 
