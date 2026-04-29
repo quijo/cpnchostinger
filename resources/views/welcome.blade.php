@@ -284,7 +284,7 @@ Faith-Based Education:</h3>
   <div class="max-w-7xl mx-auto px-4">
     <h2 class="text-3xl font-bold text-center mb-10">Our Academic Programs</h2>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
 
       <!-- Card -->
       <div class="promo-card opacity-0 translate-y-10 transition-all duration-700 relative rounded-2xl overflow-hidden shadow-lg group hover:-translate-y-2 hover:shadow-2xl">
@@ -323,16 +323,16 @@ Faith-Based Education:</h3>
         </div>
       </div>
 
-      <!-- Card COLLEGE to be edited later-->
-      {{-- <div class="promo-card opacity-0 translate-y-10 transition-all duration-700 relative rounded-2xl overflow-hidden shadow-lg group hover:-translate-y-2 hover:shadow-2xl">
-        <img src="/images/college/college.jpg" alt="College" class="w-full h-[420px] object-contain bg-blue-950">
+  
+      <div class="promo-card opacity-0 translate-y-10 transition-all duration-700 relative rounded-2xl overflow-hidden shadow-lg group hover:-translate-y-2 hover:shadow-2xl">
+        <img src="/images/college/college_done.jpg" alt="College" class="w-full h-[420px] object-contain bg-blue-950">
         <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
         <div class="absolute bottom-0 p-5 text-white">
           <h3 class="text-xl font-semibold">College</h3>
           <p class="text-sm opacity-90">Undergraduate Programs</p>
           <a href="more-about-us" class="inline-block mt-3 bg-white text-black px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-200">Learn More</a>
         </div>
-      </div> --}}
+      </div> 
 
     </div>
   </div>
