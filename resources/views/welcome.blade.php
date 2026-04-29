@@ -325,7 +325,7 @@ Faith-Based Education:</h3>
 
   
       <div class="promo-card opacity-0 translate-y-10 transition-all duration-700 relative rounded-2xl overflow-hidden shadow-lg group hover:-translate-y-2 hover:shadow-2xl">
-        <img src="/images/college/college_done.jpg" alt="College" class="w-full h-[420px] object-contain bg-blue-950">
+        <img src="/images/college/college1.jpg" alt="College" class="w-full h-[420px] object-contain bg-blue-950">
         <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
         <div class="absolute bottom-0 p-5 text-white">
           <h3 class="text-xl font-semibold">College</h3>
