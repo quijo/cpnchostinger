@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Event;
 use App\Models\Announcement;
+use App\Models\Article;
 
 class PagesController extends Controller
 {
@@ -35,8 +36,27 @@ public function welcome()
         ];
     });
 
-    return view('welcome', compact('announcements', 'events'));
+
+      $articles = Article::where('is_published', true)
+        ->latest()
+        ->take(8)
+        ->get();
+
+    return view('welcome', compact('announcements', 'events','articles'));
 }
+
+
+public function showArticle($slug)
+{
+    $article = Article::where('slug', $slug)
+        ->where('is_published', true)
+        ->firstOrFail();
+
+    return view('article.article-show', compact('article'));
+}
+
+
+
 
 
 }

@@ -500,7 +500,47 @@ Faith-Based Education:</h3>
 
 </section>
 
+<!-- Articles -->
 
+<section class="max-w-7xl mx-auto py-10 px-4">
+    <h2 class="text-2xl font-bold mb-6">Latest Articles</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        @forelse ($articles as $article)
+            <div class="border rounded-lg overflow-hidden shadow-sm bg-white">
+
+                @if ($article->image)
+                    <img src="{{ asset('storage/' . $article->image) }}" class="w-full h-40 object-cover">
+                @endif
+
+                <div class="p-4">
+                    <h3 class="text-md font-semibold">
+                        {{ $article->title }}
+                    </h3>
+
+                    <p class="text-xs text-gray-500 mt-1">
+                        {{ $article->user->name ?? 'System' }}
+                    </p>
+
+                    <p class="text-xs text-gray-400">
+                        {{ optional($article->published_at)->format('M d, Y') }}
+                    </p>
+
+                    <div class="mt-2 text-sm text-gray-600">
+                        {{ \Illuminate\Support\Str::limit(strip_tags($article->content), 80) }}
+                    </div>
+                      <a href="{{ url('/article/' . $article->slug) }}"
+   class="inline-block mt-3 text-sm text-blue-600 hover:underline">
+    Read More →
+</a>
+                </div>
+              
+            </div>
+        @empty
+            <p class="col-span-4 text-center">No articles published yet.</p>
+        @endforelse
+    </div>
+</section>
 
 
 
