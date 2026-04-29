@@ -502,46 +502,71 @@ Faith-Based Education:</h3>
 
 
 
-<!-- Announcement -->
+
 
 <!-- ANNOUNCEMENTS -->
 <section class="max-w-7xl mx-auto py-10 px-4 grid grid-cols-1 md:grid-cols-2 gap-6">
 
     <!-- 📢 LEFT: ANNOUNCEMENTS -->
     <div>
-        <h2 class="text-2xl font-bold mb-4">📢 Announcements</h2>
+            <h2 class="text-2xl font-bold mb-4">📢 Announcements</h2>
 
-        <div class="space-y-4">
-            @forelse($announcements as $announcement)
-                    <a href="{{ route('announcements.show', $announcement) }}"
-       class="block border p-4 mb-3 hover:bg-gray-50 rounded">
+            <div class="space-y-4">
+                @forelse($announcements as $announcement)
+                        <a href="{{ route('announcements.show', $announcement) }}"
+        class="block border p-4 mb-3 hover:bg-gray-50 rounded">
 
-        <h2 class="font-bold text-lg">
-            {{ $announcement->title }}
-        </h2>
+            <h2 class="font-bold text-lg">
+                {{ $announcement->title }}
+            </h2>
 
-        <p class="text-sm text-gray-600">
-            {{ \Illuminate\Support\Str::limit(strip_tags($announcement->content), 120) }}
-        </p>
+            <p class="text-sm text-gray-600">
+                {{ \Illuminate\Support\Str::limit(strip_tags($announcement->content), 120) }}
+            </p>
 
-        <!-- <span class="text-blue-500 text-sm">
-            Read more →
-        </span> -->
-    </a>
-            @empty
-                <p class="text-gray-500">No announcements available.</p>
-            @endforelse
+            <!-- <span class="text-blue-500 text-sm">
+                Read more →
+            </span> -->
+        </a>
+                @empty
+                    <p class="text-gray-500">No announcements available.</p>
+                @endforelse
+            </div>
+        </div>
+
+            <!-- 📅 RIGHT: CALENDAR / EVENTS -->
+        
+            <div>
+                <h2 class="text-2xl font-bold mb-4">📅 Calendar</h2>
+
+                <div id="calendar"></div>
+            </div>
+
+            <!-- CALENDAR MODAL -->
+             <div 
+    id="eventModal"
+    style="display:none;"
+    class="fixed inset-0 bg-black/50 flex items-center justify-center z-50"
+>
+    <div class="bg-white rounded-xl shadow-xl w-full max-w-lg p-6 relative">
+
+        <button onclick="closeModal()" class="absolute top-3 right-3 text-gray-500">
+            ✕
+        </button>
+
+        <h2 id="modalTitle" class="text-xl font-bold mb-2"></h2>
+
+        <div class="text-sm text-gray-600 space-y-2">
+            <p><strong>Start:</strong> <span id="modalStart"></span></p>
+            <p><strong>End:</strong> <span id="modalEnd"></span></p>
+            <p><strong>Location:</strong> <span id="modalLocation"></span></p>
+        </div>
+
+        <div class="mt-4 text-gray-700">
+            <p id="modalDescription"></p>
         </div>
     </div>
-
-    <!-- 📅 RIGHT: CALENDAR / EVENTS -->
-    
-
-        <div>
-            <h2 class="text-2xl font-bold mb-4">📅 Calendar</h2>
-
-            <div id="calendar"></div>
-        </div>
+</div>
     </div>
 
 </section>
@@ -638,12 +663,33 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         },
 
-        events: @json($events)
+        events: @json($events),
+
+          eventClick: function(info) {
+    showEventModal(info.event);
+}
 
     });
 
     calendar.render();
 });
+</script>
+
+<script>
+    // Calendar Modal
+    function showEventModal(event) {
+    document.getElementById('modalTitle').innerText = event.title || '';
+    document.getElementById('modalStart').innerText = event.start ? event.start.toLocaleString() : '';
+    document.getElementById('modalEnd').innerText = event.end ? event.end.toLocaleString() : '';
+    document.getElementById('modalLocation').innerText = event.extendedProps.location || 'N/A';
+    document.getElementById('modalDescription').innerText = event.extendedProps.description || '';
+
+    document.getElementById('eventModal').style.display = 'flex';
+}
+
+function closeModal() {
+    document.getElementById('eventModal').style.display = 'none';
+}
 </script>
 
 </x-app>

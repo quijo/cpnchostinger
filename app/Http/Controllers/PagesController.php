@@ -21,10 +21,17 @@ public function welcome()
     ->take(10)
     ->get()
     ->map(function ($event) {
+
+    
         return [
-            'title' => $event->title,
-            'start' => $event->start_date,
-            'end' => $event->end_date,
+        'id' => $event->id,
+        'title' => $event->title,
+        'start' => $event->start_date,
+        'end' => $event->end_date,
+        'description' => $event->description,
+        'location' => $event->location,
+        'backgroundColor' => '#3b82f6',
+            
         ];
     });
 

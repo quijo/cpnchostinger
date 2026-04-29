@@ -38,6 +38,10 @@ class EventResource extends Resource
                 ->required()
                 ->maxLength(255),
 
+              \Filament\Forms\Components\TextInput::make('locatoin')
+                ->nullable()
+                ->maxLength(255),
+
             \Filament\Forms\Components\Textarea::make('description')
                 ->required()
                 ->columnSpanFull(),
@@ -47,9 +51,9 @@ class EventResource extends Resource
                 ->directory('events')
                 ->nullable(),
 
-            \Filament\Forms\Components\DateTimePicker::make('start_date'),
+            \Filament\Forms\Components\DateTimePicker::make('start_date')->required(),
 
-            \Filament\Forms\Components\DateTimePicker::make('end_date'),
+            \Filament\Forms\Components\DateTimePicker::make('end_date')->required(),
         ]);
     }
 
@@ -81,6 +85,7 @@ class EventResource extends Resource
         return [
             'index' => Pages\ListEvents::route('/'),
             'create' => Pages\CreateEvent::route('/create'),
+            'view' => Pages\ViewEvent::route('/{record}'),
             'edit' => Pages\EditEvent::route('/{record}/edit'),
         ];
     }
