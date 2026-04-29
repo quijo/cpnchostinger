@@ -682,8 +682,8 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('modalStart').innerText = event.start ? event.start.toLocaleString() : '';
     document.getElementById('modalEnd').innerText = event.end ? event.end.toLocaleString() : '';
     document.getElementById('modalLocation').innerText = event.extendedProps.location || 'N/A';
-    document.getElementById('modalDescription').innerText = event.extendedProps.description || '';
-
+    document.getElementById('modalDescription').innerHTML =
+    event.extendedProps.description || '';
     document.getElementById('eventModal').style.display = 'flex';
 }
 
