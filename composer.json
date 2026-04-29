@@ -9,7 +9,8 @@
         "artesaos/seotools": "^1.4",
         "filament/filament": "*",
         "laravel/framework": "^11.23",
-        "laravel/tinker": "^2.9"
+        "laravel/tinker": "^2.9",
+        "spatie/laravel-permission": "^6.25"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
