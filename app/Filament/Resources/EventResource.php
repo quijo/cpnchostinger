@@ -24,6 +24,16 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Columns\IconColumn;
 use BackedEnum;
 
+// clickable
+use Filament\Actions\EditAction;
+
+use Filament\Actions\DeleteBulkAction;
+
+use Filament\Tables\Actions\BulkActionGroup;
+
+use Filament\Forms\Components\RichEditor;
+
+
 class EventResource extends Resource
 {
  
@@ -38,13 +48,13 @@ class EventResource extends Resource
                 ->required()
                 ->maxLength(255),
 
-              \Filament\Forms\Components\TextInput::make('locatoin')
+              \Filament\Forms\Components\TextInput::make('location')
                 ->nullable()
                 ->maxLength(255),
 
-            \Filament\Forms\Components\Textarea::make('description')
-                ->required()
-                ->columnSpanFull(),
+            \Filament\Forms\Components\RichEditor::make('description')
+    ->required()
+    ->columnSpanFull(),
 
             \Filament\Forms\Components\FileUpload::make('image')
                 ->image()
@@ -70,7 +80,14 @@ class EventResource extends Resource
 
             IconColumn::make('is_active')
                 ->boolean(),
-        ]);
+        ])
+        
+           ->actions([
+                EditAction::make(),
+            ])
+              ->bulkActions([
+                DeleteBulkAction::make(),
+            ]);
     }
 
     public static function getRelations(): array

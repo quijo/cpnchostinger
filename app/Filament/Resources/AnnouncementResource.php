@@ -73,7 +73,6 @@ class AnnouncementResource extends Resource
                 TextColumn::make('published_at')->dateTime(),
             ])
             ->actions([
-                
                 EditAction::make(),
             ])
             ->bulkActions([
