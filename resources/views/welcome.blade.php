@@ -266,7 +266,7 @@ Faith-Based Education:</h3>
                 Facebook Page
             </a>
             <a href="/admissions"
-               target="_blank"
+              
                class="inline-block bg-red-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-900 transition">
                 Enroll Now
             </a>
