@@ -42,3 +42,6 @@ Route::get('/announcements/{announcement}', function (Announcement $announcement
 })->name('announcements.show');
 
 
+//Read more Aricles
+Route::get('/article/{slug}', [PagesController::class, 'showArticle']);
+

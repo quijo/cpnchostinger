@@ -266,7 +266,7 @@ Faith-Based Education:</h3>
                 Facebook Page
             </a>
             <a href="/admissions"
-               target="_blank"
+              
                class="inline-block bg-red-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-900 transition">
                 Enroll Now
             </a>
@@ -284,7 +284,7 @@ Faith-Based Education:</h3>
   <div class="max-w-7xl mx-auto px-4">
     <h2 class="text-3xl font-bold text-center mb-10">Our Academic Programs</h2>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
 
       <!-- Card -->
       <div class="promo-card opacity-0 translate-y-10 transition-all duration-700 relative rounded-2xl overflow-hidden shadow-lg group hover:-translate-y-2 hover:shadow-2xl">
@@ -323,16 +323,16 @@ Faith-Based Education:</h3>
         </div>
       </div>
 
-      <!-- Card COLLEGE to be edited later-->
-      {{-- <div class="promo-card opacity-0 translate-y-10 transition-all duration-700 relative rounded-2xl overflow-hidden shadow-lg group hover:-translate-y-2 hover:shadow-2xl">
-        <img src="/images/college/college.jpg" alt="College" class="w-full h-[420px] object-contain bg-blue-950">
+  
+      <div class="promo-card opacity-0 translate-y-10 transition-all duration-700 relative rounded-2xl overflow-hidden shadow-lg group hover:-translate-y-2 hover:shadow-2xl">
+        <img src="/images/college/college1.jpg" alt="College" class="w-full h-[420px] object-contain bg-blue-950">
         <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
         <div class="absolute bottom-0 p-5 text-white">
           <h3 class="text-xl font-semibold">College</h3>
           <p class="text-sm opacity-90">Undergraduate Programs</p>
           <a href="more-about-us" class="inline-block mt-3 bg-white text-black px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-200">Learn More</a>
         </div>
-      </div> --}}
+      </div> 
 
     </div>
   </div>
@@ -500,7 +500,47 @@ Faith-Based Education:</h3>
 
 </section>
 
+<!-- Articles -->
 
+<section class="max-w-7xl mx-auto py-10 px-4">
+    <h2 class="text-2xl font-bold mb-6">Latest Articles</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        @forelse ($articles as $article)
+            <div class="border rounded-lg overflow-hidden shadow-sm bg-white">
+
+                @if ($article->image)
+                    <img src="{{ asset('storage/' . $article->image) }}" class="w-full h-40 object-cover">
+                @endif
+
+                <div class="p-4">
+                    <h3 class="text-md font-semibold">
+                        {{ $article->title }}
+                    </h3>
+
+                    <p class="text-xs text-gray-500 mt-1">
+                        {{ $article->user->name ?? 'System' }}
+                    </p>
+
+                    <p class="text-xs text-gray-400">
+                        {{ optional($article->published_at)->format('M d, Y') }}
+                    </p>
+
+                    <div class="mt-2 text-sm text-gray-600">
+                        {{ \Illuminate\Support\Str::limit(strip_tags($article->content), 80) }}
+                    </div>
+                      <a href="{{ url('/article/' . $article->slug) }}"
+   class="inline-block mt-3 text-sm text-blue-600 hover:underline">
+    Read More →
+</a>
+                </div>
+              
+            </div>
+        @empty
+            <p class="col-span-4 text-center">No articles published yet.</p>
+        @endforelse
+    </div>
+</section>
 
 
 
