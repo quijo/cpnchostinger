@@ -518,9 +518,9 @@ Faith-Based Education:</h3>
                         {{ $article->title }}
                     </h3>
 
-                    <p class="text-xs text-gray-500 mt-1">
+                    <!-- <p class="text-xs text-gray-500 mt-1">
                         {{ $article->user->name ?? 'System' }}
-                    </p>
+                    </p> -->
 
                     <p class="text-xs text-gray-400">
                         {{ optional($article->published_at)->format('M d, Y') }}
