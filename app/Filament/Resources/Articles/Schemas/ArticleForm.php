@@ -22,8 +22,10 @@ class ArticleForm
                 Textarea::make('content')
                     ->required()
                     ->columnSpanFull(),
-                FileUpload::make('image')
-                    ->image(),
+                 FileUpload::make('image')
+                ->image()
+                ->disk('public')
+                ->directory('announcements'),
                 Toggle::make('is_published')
                     ->required(),
                 DateTimePicker::make('published_at'),
