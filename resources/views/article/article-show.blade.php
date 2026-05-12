@@ -6,11 +6,9 @@
         {{ $article->title }}
     </h1>
 
-    <p class="text-sm text-gray-500 mb-4">
-        By {{ $article->user->name ?? 'System' }} |
-        {{ optional($article->published_at)->format('M d, Y') }}
-    </p>
-
+<p class="text-sm text-gray-500 mb-4">
+    {{ $article->published_at?->format('F d, Y') }}
+</p>
     @if ($article->image)
         <img src="{{ asset('storage/' . $article->image) }}"
              class="w-full rounded mb-6">

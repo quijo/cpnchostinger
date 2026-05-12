@@ -24,6 +24,7 @@ class ArticlesTable
                 ImageColumn::make('image'),
                 IconColumn::make('is_published')
                     ->boolean(),
+                
                 TextColumn::make('published_at')
                     ->dateTime()
                     ->sortable(),
