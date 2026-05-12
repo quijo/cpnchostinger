@@ -10,7 +10,7 @@
             {{-- LEFT: IMAGE --}}
             <div>
                 @if($announcement->image)
-                   <img src="{{ Storage::url($announcement->image) }}"
+                   <img src="{{ asset('storage/' . $announcement->image) }}">"
      class="w-full rounded-lg shadow-md object-cover">
                 @else
                     <div class="w-full h-64 bg-gray-200 flex items-center justify-center rounded-lg">
