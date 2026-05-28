@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\GradesController;
 use App\Http\Controllers\ContactController;
 use App\Models\Announcement;
 
@@ -44,4 +45,7 @@ Route::get('/announcements/{announcement}', function (Announcement $announcement
 
 //Read more Aricles
 Route::get('/article/{slug}', [PagesController::class, 'showArticle']);
+
+//Read more Aricles
+Route::get('/grades/create', [GradesController::class, 'create'])->name('grades.create');
 
