@@ -45,7 +45,7 @@ body {
     width:100vh;
     height:auto;
 
-    transform:rotate(-90deg);
+    /* transform:rotate(-90deg); */
 
 }
 
