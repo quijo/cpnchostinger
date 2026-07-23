@@ -49,3 +49,6 @@ Route::get('/article/{slug}', [PagesController::class, 'showArticle']);
 //Read more Aricles
 Route::get('/grades/create', [GradesController::class, 'create'])->name('grades.create');
 
+Route::get('/brochure', function () {
+    return view('brochure');
+})->name('brochure');
