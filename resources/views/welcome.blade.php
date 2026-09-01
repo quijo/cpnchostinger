@@ -195,11 +195,11 @@ Faith-Based Education:</h3>
     {{-- Enroll now Section --}}
     {{-- --------------------- --}}
 
-<section class="bg-white py-16">
-    <div class="max-w-7xl mx-auto px-6">
+{{-- <section class="bg-white py-16"> --}}
+    {{-- <div class="max-w-7xl mx-auto px-6"> --}}
 
         <!-- Header -->
-        <div class="text-center mb-12">
+        {{-- <div class="text-center mb-12">
             <h2 class="text-4xl font-bold text-gray-800 mb-4">
                 Central Philippine Nazarene College
             </h2>
@@ -209,20 +209,20 @@ Faith-Based Education:</h3>
             <p class="text-gray-500 mt-2">
                 Saint Mary’s Drive, Apas, Cebu City (at the back of Gaisano Country Mall)
             </p>
-        </div>
+        </div> --}}
 
         <!-- Highlight Banner -->
-        <div class="bg-blue-600 text-white text-center py-4 rounded-xl mb-12 shadow-lg">
+        {{-- <div class="bg-blue-600 text-white text-center py-4 rounded-xl mb-12 shadow-lg">
             <h3 class="text-xl font-bold tracking-wide">
                 NO TUITION FEE INCREASE
             </h3>
-        </div>
+        </div> --}}
 
         <!-- Programs -->
-        <div class="grid md:grid-cols-2 gap-10">
+        {{-- <div class="grid md:grid-cols-2 gap-10"> --}}
 
             <!-- Left -->
-            <div class="bg-gray-50 p-8 rounded-2xl shadow">
+            {{-- <div class="bg-gray-50 p-8 rounded-2xl shadow">
                 <h3 class="text-2xl font-semibold text-gray-800 mb-6">
                     Basic Education
                 </h3>
@@ -232,10 +232,10 @@ Faith-Based Education:</h3>
                     <li>✔ Elementary (Grade 1–6)</li>
                     <li>✔ Junior High School (Grade 7–10)</li>
                 </ul>
-            </div>
+            </div> --}}
 
             <!-- Right -->
-            <div class="bg-gray-50 p-8 rounded-2xl shadow">
+            {{-- <div class="bg-gray-50 p-8 rounded-2xl shadow">
                 <h3 class="text-2xl font-semibold text-gray-800 mb-6">
                     College Programs
                 </h3>
@@ -244,12 +244,12 @@ Faith-Based Education:</h3>
                     <li>✔ Bachelor of Arts in Theology (ABTH)</li>
                     <li>✔ Bachelor of Arts in Religious Education (ABRE)</li>
                 </ul>
-            </div>
+            </div> --}}
 
-        </div>
+        {{-- </div> --}}
 
         <!-- Contact / CTA -->
-        <div class="mt-16 text-center">
+        {{-- <div class="mt-16 text-center">
             <p class="text-gray-700 mb-4">
                 For inquiries, please call:
             </p>
@@ -270,10 +270,10 @@ Faith-Based Education:</h3>
                class="inline-block bg-red-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-900 transition">
                 Enroll Now
             </a>
-        </div>
+        </div> --}}
 
-    </div>
-</section>
+    {{-- </div> --}}
+{{-- </section> --}}
 
 {{-- ----------- --}}
 {{-- PROMOTIONAL --}}
